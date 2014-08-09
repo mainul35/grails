@@ -1,0 +1,19 @@
+Save Data
+==============
+    def save(def params){
+        User user = new User(params);
+        def response = user.save();
+        if (response.hasErrors()){
+            response.errors.each {
+                println it
+            }
+            return 0
+        }
+       return response.id;
+    }
+
+
+Encoding
+===========
+.encodedAsMD5()
+.encodeAsHTML()
