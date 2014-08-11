@@ -1,0 +1,33 @@
+Create a Filters in conf
+==========================
+SecurityFilters
+Example:
+class SecurityFilters {
+
+    def filters = {
+        all(controller:'*', action:'*') {
+            before = {
+                if (controllerName == 'assets'){return true}
+                if (!session.user && !actionName.equals("login") && !actionName.equals("doLogin") && !actionName.equals("logout")){
+                    redirect(controller: "user", action:"login")
+                    return false
+                }
+            }
+            after = { Map model ->
+
+            }
+            afterView = { Exception e ->
+
+            }
+        }
+    }
+}
+
+
+
+Session
+===============
+session.invalidate()  : Destroy the session;
+
+session["user"] = response; : Set Session
+

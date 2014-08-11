@@ -17,3 +17,21 @@ Encoding
 ===========
 .encodedAsMD5()
 .encodeAsHTML()
+
+
+Note
+============
+1.  g.link(controller:"user",action:"logout"){'Logout'}
+2. TagLib Example:
+class AppTagLib {
+    static namespace = "app"
+    def userInfo = { attrs, body ->
+        def user = session.user;
+        String fullName =  user.fullName?:'User'
+        out << '<a href="#" class="dropdown-toggle" data-toggle="dropdown">' + fullName +' <b class="caret"></b></a>'
+        out << '<ul class="dropdown-menu animated fadeInUp">'
+        out << '<li>' + g.link(controller:"user",action:"logout"){'Logout'}+' </li>'
+        out << ' </ul>'
+    }
+}
+
