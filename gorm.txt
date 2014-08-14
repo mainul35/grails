@@ -1,0 +1,17 @@
+Events and Auto Timestamping
+===================================================================
+beforeInsert - Executed before an object is initially persisted to the database. If you return false, the insert will be cancelled.
+beforeUpdate - Executed before an object is updated. If you return false, the update will be cancelled.
+beforeDelete - Executed before an object is deleted. If you return false, the delete will be cancelled.
+beforeValidate - Executed before an object is validated
+afterInsert - Executed after an object is persisted to the database
+afterUpdate - Executed after an object has been updated
+afterDelete - Executed after an object has been deleted
+onLoad - Executed when an object is loaded from the database
+
+
+Batch Update
+===============
+        IPAddress.where {
+            inList("id",params.ipAddress.collect{id -> Long.parseLong(id)})
+        }.updateAll(isUsed:true)

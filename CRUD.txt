@@ -1,0 +1,69 @@
+    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+
+    def index(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        if (!params.order){
+            params.order = "desc"
+            params.sort = "id"
+        }
+        respond DataCenter.list(params), model:[dataCenterInstanceCount: DataCenter.count()]
+    }
+
+    def show(DataCenter dataCenterInstance) {
+        respond dataCenterInstance
+    }
+
+    def create() {
+        [dataCenterInstance:chainModel?.dataCenterInstance]
+    }
+
+    def save() {
+        DataCenter dataCenterInstance = new DataCenter(params);
+        def res = dataCenterInstance.save(flush: true)
+        if (res.hasErrors()){
+            flash.message = [info:"Failed",success:false]
+            res.errors.each {
+                print it
+            }
+            chain(action: "create",model: [dataCenterInstance:dataCenterInstance])
+        }else{
+            flash.message = [info:"Created",success:true]
+            redirect(action: "index")
+        }
+    }
+
+    def edit(DataCenter dataCenterInstance) {
+        respond dataCenterInstance
+    }
+
+    def update() {
+        DataCenter dataCenterInstance =  DataCenter.get(params.id);
+        dataCenterInstance.properties =  params;
+        if (dataCenterInstance == null && !params.id) {
+            flash.message = [info:"Record Not Found",success:false]
+            redirect(action: "index")
+        }
+        def res = dataCenterInstance.save(flush: true)
+        if (res.hasErrors()){
+            flash.message = [info:"Update Failed",success:false]
+            res.errors.each {
+                print it
+            }
+            redirect(action: "edit",params: [id:dataCenterInstance.id])
+        }else{
+            flash.message = [info:"Updated",success:true]
+            redirect(action: "index")
+        }
+    }
+
+
+    def delete(DataCenter dataCenterInstance) {
+        def url = g.createLink(action: "index");
+        if (dataCenterInstance != null) {
+            dataCenterInstance.delete(flush: true)
+            flash.message = [info:"Deleted",success:true]
+        }else{
+            flash.message = [info:"Record Not Found",success:false]
+        }
+        render([url:url] as JSON);
+    }
