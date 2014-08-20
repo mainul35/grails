@@ -1,0 +1,15 @@
+ autoComplete: function(){
+            jQuery( ".auto-complete-box" ).autocomplete({
+                source: function( request, response ) {
+                    console.log(request);
+                    SA.ajax.call({
+                        url:SA.baseURL + "IPAddress/search/?ip=" + request.term,
+                        dataType: "json",
+                        callBackF:function(res){
+                            response(res)
+
+                        }
+                    });
+                }
+            });
+        }

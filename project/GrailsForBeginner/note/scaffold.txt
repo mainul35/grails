@@ -1,2 +1,0 @@
-${propertyName} = DomainNameInstance
-${p.name}   = Field Name
