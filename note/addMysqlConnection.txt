@@ -1,1 +1,15 @@
 Q.How to install MySQL in Grails?
+
+Step-1: Download mysql-connector-java-x.x.x-bin.jar
+Step-2: Add this in project lib dir
+Step-3: Open grails-app/config/DataSource.groovy
+Step-4: Change The below Configuration Find in that file and replace.
+
+    driverClassName = "com.mysql.jdbc.Driver"
+    username = "mysqlUser"
+    password = "mysqlPassword"
+
+    dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
+    url = "jdbc:mysql://localhost/databaseName"
+
+Step-5: Create Database in mysql, run app and then enjoy. :)
