@@ -32,6 +32,17 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${subjectInstance?.student}">
+				<li class="fieldcontain">
+					<span id="student-label" class="property-label"><g:message code="subject.student.label" default="Student" /></span>
+					
+						<g:each in="${subjectInstance.student}" var="s">
+						<span class="property-value" aria-labelledby="student-label"><g:link controller="student" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:subjectInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

@@ -1,0 +1,6 @@
+Q. How to enable Debug when not able to debug grails?
+
+Step-1: Open grails-app/BuildConfig.grooby
+Step-2: Under grails.project.fork change below things
+    test: false,
+    run: false,
