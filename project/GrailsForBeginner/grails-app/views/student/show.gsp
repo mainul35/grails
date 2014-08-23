@@ -1,5 +1,5 @@
 
-<%@ page import="grailsforbeginner.Student" %>
+<%@ page import="com.miaisoft.tutotial.gorm.Student" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,11 +23,38 @@
 			</g:if>
 			<ol class="property-list student">
 			
+				<g:if test="${studentInstance?.intake}">
+				<li class="fieldcontain">
+					<span id="intake-label" class="property-label"><g:message code="student.intake.label" default="Intake" /></span>
+					
+						<span class="property-value" aria-labelledby="intake-label"><g:fieldValue bean="${studentInstance}" field="intake"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${studentInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="student.name.label" default="Name" /></span>
 					
 						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${studentInstance}" field="name"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${studentInstance?.program}">
+				<li class="fieldcontain">
+					<span id="program-label" class="property-label"><g:message code="student.program.label" default="Program" /></span>
+					
+						<span class="property-value" aria-labelledby="program-label"><g:fieldValue bean="${studentInstance}" field="program"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${studentInstance?.section}">
+				<li class="fieldcontain">
+					<span id="section-label" class="property-label"><g:message code="student.section.label" default="Section" /></span>
+					
+						<span class="property-value" aria-labelledby="section-label"><g:fieldValue bean="${studentInstance}" field="section"/></span>
 					
 				</li>
 				</g:if>

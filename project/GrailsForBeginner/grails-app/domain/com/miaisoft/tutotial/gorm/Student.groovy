@@ -10,8 +10,10 @@ class Student {
     String section
 
 
-    static belongsTo = ["program":Program,"subject":Subject]
+
+    static belongsTo = [program:Program]
     static hasMany = ["subject":Subject]
+
 
 
     static constraints = {

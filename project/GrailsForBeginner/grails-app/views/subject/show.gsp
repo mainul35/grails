@@ -1,5 +1,5 @@
 
-<%@ page import="grailsforbeginner.Subject" %>
+<%@ page import="com.miaisoft.tutotial.gorm.Subject" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,22 +23,29 @@
 			</g:if>
 			<ol class="property-list subject">
 			
-				<g:if test="${subjectInstance?.name}">
+				<g:if test="${subjectInstance?.courseCode}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="subject.name.label" default="Name" /></span>
+					<span id="courseCode-label" class="property-label"><g:message code="subject.courseCode.label" default="Course Code" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${subjectInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="courseCode-label"><g:fieldValue bean="${subjectInstance}" field="courseCode"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${subjectInstance?.student}">
+				<g:if test="${subjectInstance?.courseTitle}">
 				<li class="fieldcontain">
-					<span id="student-label" class="property-label"><g:message code="subject.student.label" default="Student" /></span>
+					<span id="courseTitle-label" class="property-label"><g:message code="subject.courseTitle.label" default="Course Title" /></span>
 					
-						<g:each in="${subjectInstance.student}" var="s">
-						<span class="property-value" aria-labelledby="student-label"><g:link controller="student" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
-						</g:each>
+						<span class="property-value" aria-labelledby="courseTitle-label"><g:fieldValue bean="${subjectInstance}" field="courseTitle"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${subjectInstance?.credit}">
+				<li class="fieldcontain">
+					<span id="credit-label" class="property-label"><g:message code="subject.credit.label" default="Credit" /></span>
+					
+						<span class="property-value" aria-labelledby="credit-label"><g:fieldValue bean="${subjectInstance}" field="credit"/></span>
 					
 				</li>
 				</g:if>

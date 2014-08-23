@@ -1,5 +1,5 @@
 
-<%@ page import="grailsforbeginner.Subject" %>
+<%@ page import="com.miaisoft.tutotial.gorm.Subject" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,7 +24,11 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="name" title="${message(code: 'subject.name.label', default: 'Name')}" />
+						<g:sortableColumn property="courseCode" title="${message(code: 'subject.courseCode.label', default: 'Course Code')}" />
+					
+						<g:sortableColumn property="courseTitle" title="${message(code: 'subject.courseTitle.label', default: 'Course Title')}" />
+					
+						<g:sortableColumn property="credit" title="${message(code: 'subject.credit.label', default: 'Credit')}" />
 					
 					</tr>
 				</thead>
@@ -32,7 +36,11 @@
 				<g:each in="${subjectInstanceList}" status="i" var="subjectInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${subjectInstance.id}">${fieldValue(bean: subjectInstance, field: "name")}</g:link></td>
+						<td><g:link action="show" id="${subjectInstance.id}">${fieldValue(bean: subjectInstance, field: "courseCode")}</g:link></td>
+					
+						<td>${fieldValue(bean: subjectInstance, field: "courseTitle")}</td>
+					
+						<td>${fieldValue(bean: subjectInstance, field: "credit")}</td>
 					
 					</tr>
 				</g:each>

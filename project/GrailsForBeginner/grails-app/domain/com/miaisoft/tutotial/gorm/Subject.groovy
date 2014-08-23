@@ -8,7 +8,7 @@ class Subject {
     String courseTitle
     String credit
 
-    static hasMany = ["student":Student]
+
 
 
 

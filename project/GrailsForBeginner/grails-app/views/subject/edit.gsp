@@ -1,4 +1,4 @@
-<%@ page import="grailsforbeginner.Subject" %>
+<%@ page import="com.miaisoft.tutotial.gorm.Subject" %>
 <!DOCTYPE html>
 <html>
 	<head>

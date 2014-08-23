@@ -1,5 +1,5 @@
 
-<%@ page import="grailsforbeginner.Student" %>
+<%@ page import="com.miaisoft.tutotial.gorm.Student" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,7 +24,13 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="intake" title="${message(code: 'student.intake.label', default: 'Intake')}" />
+					
 						<g:sortableColumn property="name" title="${message(code: 'student.name.label', default: 'Name')}" />
+					
+						<g:sortableColumn property="program" title="${message(code: 'student.program.label', default: 'Program')}" />
+					
+						<g:sortableColumn property="section" title="${message(code: 'student.section.label', default: 'Section')}" />
 					
 						<g:sortableColumn property="studentID" title="${message(code: 'student.studentID.label', default: 'Student ID')}" />
 					
@@ -34,7 +40,13 @@
 				<g:each in="${studentInstanceList}" status="i" var="studentInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${studentInstance.id}">${fieldValue(bean: studentInstance, field: "name")}</g:link></td>
+						<td><g:link action="show" id="${studentInstance.id}">${fieldValue(bean: studentInstance, field: "intake")}</g:link></td>
+					
+						<td>${fieldValue(bean: studentInstance, field: "name")}</td>
+					
+						<td>${fieldValue(bean: studentInstance, field: "program")}</td>
+					
+						<td>${fieldValue(bean: studentInstance, field: "section")}</td>
 					
 						<td>${fieldValue(bean: studentInstance, field: "studentID")}</td>
 					

@@ -1,0 +1,12 @@
+1. generate-all :   Generates a controller, views, and a controller unit test for the given domain class
+   Example:
+   grails generate-all
+   grails generate-all com.miaisoft.tutorial.Student
+   grails generate-all "*"
+
+
+
+
+
+
+
