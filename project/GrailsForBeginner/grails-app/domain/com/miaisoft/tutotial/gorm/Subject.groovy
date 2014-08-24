@@ -10,6 +10,8 @@ class Subject {
 
 
 
+    static belongsTo = Student
+    static hasMany = [student:Student]
 
 
     static constraints = {

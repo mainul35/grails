@@ -11,7 +11,6 @@ class Student {
 
 
 
-    static belongsTo = [program:Program]
     static hasMany = ["subject":Subject]
 
 

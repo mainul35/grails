@@ -29,3 +29,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: subjectInstance, field: 'student', 'error')} ">
+	<label for="student">
+		<g:message code="subject.student.label" default="Student" />
+		
+	</label>
+	
+
+</div>
+
