@@ -113,6 +113,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="GrailsForBeginner-grailsPlugins" />
+    <orderEntry type="library" name="grails-2.4.0" level="application" />
   </component>
 </module>
 
