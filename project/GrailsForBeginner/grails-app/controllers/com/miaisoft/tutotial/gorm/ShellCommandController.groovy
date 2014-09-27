@@ -14,6 +14,6 @@ class ShellCommandController {
             stringBuilder.append(line);
             stringBuilder.append(System.getProperty("line.separator"));
         }
-        render(reader.toString() + "   ------   " + process.exitValue())
+        render(stringBuilder.toString() + "   ------   " + process.exitValue())
     }
 }
