@@ -6,6 +6,14 @@ class ShellCommandController {
        Process process;
         process = Runtime.getRuntime().exec("ls -a");
         process.waitFor();
-        render(process.exitValue())
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        String line = "";
+        StringBuilder stringBuilder = new StringBuilder();
+        while ((line = reader.readLine()) != null) {
+            stringBuilder.append(line);
+            stringBuilder.append(System.getProperty("line.separator"));
+        }
+        render(reader.toString() + "   ------   " + process.exitValue())
     }
 }
