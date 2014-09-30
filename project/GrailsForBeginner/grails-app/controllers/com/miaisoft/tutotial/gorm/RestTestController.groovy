@@ -2,8 +2,11 @@ package com.miaisoft.tutotial.gorm
 
 import com.miaisoft.longprocess.GlobalInformation
 import com.miaisoft.longprocess.RunnableTesting
+import grailsforbeginner.HttpRequesterService
 
 class RestTestController {
+
+    HttpRequesterService httpRequesterService
 
     static allowedMethods = [get:"GET",post: "POST", put: "PUT", delete: "DELETE"]
 
@@ -11,7 +14,8 @@ class RestTestController {
         render("Well done This is GET Request.")
     }
     def post() {
-        render("Well done This is POST Request. Name = " + params.name)
+        def prms = request.JSON;
+        render("Well done This is POST Request. Name = " + prms.name)
     }
     def put() {
         render("Well done This is PUT Request. Name = " + params.name)
@@ -38,6 +42,13 @@ class RestTestController {
         }else{
             render("Id Required")
         }
+    }
+
+
+    def serverRequest(){
+        def map = [:];
+        map.put("name","Touhid");
+        render(httpRequesterService.poster("localhost:8221/GrailsForBeginner/restTest/post",map));
     }
 
 }
