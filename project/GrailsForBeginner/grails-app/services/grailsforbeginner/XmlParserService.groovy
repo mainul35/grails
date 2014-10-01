@@ -3,7 +3,6 @@ package grailsforbeginner
 class XmlParserService {
 
     def readXMLFromFile() {
-
         String xmlText = new File("D:\\touhid\\grails\\project\\GrailsForBeginner\\grails-app\\conf\\serverConfig.xml").text
         def configuration = new XmlSlurper().parseText(xmlText);
         def nic = configuration.nic
