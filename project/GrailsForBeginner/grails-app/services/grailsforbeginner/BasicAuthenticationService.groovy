@@ -6,21 +6,17 @@ import java.nio.charset.Charset
 
 class BasicAuthenticationService {
 
-    def serviceMethod(def request) {
-
-        String authHeader = request.getHeader('Authorization').substring("Basic".length()).trim()
-        def aByte = Base64.decode(authHeader);
-        String userPass = new String(aByte,Charset.forName("UTF-8"))
-
-
-        final String authorization = httpRequest.getHeader("Authorization");
-        if (authorization != null && authorization.startsWith("Basic")) {
-            // Authorization: Basic base64credentials
-            String base64Credentials = authorization.substring("Basic".length()).trim();
-            String credentials = new String(Base64.decode(base64Credentials),
-                    Charset.forName("UTF-8"));
-            // credentials = username:password
-            final String[] values = credentials.split(":", 2);
+    def check(def request) {
+        if (request && request.getHeader('Authorization')){
+            String authHeader = request.getHeader('Authorization').substring("Basic".length()).trim()
+            def headerByte = Base64.decode(authHeader);
+            String userPass = new String(headerByte,Charset.forName("UTF-8"))
+            final String[] values = userPass.split(":", 2);
+            if (values[0].equals("touhid") && values[1].equals("touhid")){
+                return true
+            }else{
+                return false
+            }
         }
     }
 }

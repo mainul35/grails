@@ -3,6 +3,7 @@ package com.miaisoft.tutotial.gorm
 import com.miaisoft.longprocess.GlobalInformation
 import com.miaisoft.longprocess.RunnableTesting
 import com.sun.org.apache.xml.internal.security.utils.Base64
+import grailsforbeginner.BasicAuthenticationService
 import grailsforbeginner.HttpRequesterService
 
 import java.nio.charset.Charset
@@ -10,6 +11,7 @@ import java.nio.charset.Charset
 class RestTestController {
 
     HttpRequesterService httpRequesterService
+    BasicAuthenticationService basicAuthenticationService
 
     static allowedMethods = [get:"GET",post: "POST", put: "PUT", delete: "DELETE"]
 
@@ -55,6 +57,7 @@ class RestTestController {
     }
 
     def authTesting(){
+        basicAuthenticationService.check(request);
         String name = ""
         String authHeader = request.getHeader('Authorization').substring("Basic".length()).trim()
         def aByte = Base64.decode(authHeader);
