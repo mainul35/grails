@@ -2,7 +2,10 @@ package com.miaisoft.tutotial.gorm
 
 import com.miaisoft.longprocess.GlobalInformation
 import com.miaisoft.longprocess.RunnableTesting
+import com.sun.org.apache.xml.internal.security.utils.Base64
 import grailsforbeginner.HttpRequesterService
+
+import java.nio.charset.Charset
 
 class RestTestController {
 
@@ -49,6 +52,14 @@ class RestTestController {
         def map = [:];
         map.put("name","Touhid");
         render(httpRequesterService.poster("localhost:8221/GrailsForBeginner/restTest/post",map));
+    }
+
+    def authTesting(){
+        String name = ""
+        String authHeader = request.getHeader('Authorization').substring("Basic".length()).trim()
+        def aByte = Base64.decode(authHeader);
+        String userPass = new String(aByte,Charset.forName("UTF-8"))
+        render("yes Working" + userPass)
     }
 
 }
