@@ -86,4 +86,5 @@ class SimpleControllerSpec extends Specification {
 
 
 ### References
+[Grails Testing - Reference Documentation](http://grails.org/doc/latest/guide/testing.html)
 [Spock Basics](https://code.google.com/p/spock/wiki/SpockBasics)
