@@ -47,9 +47,30 @@ class SimpleControllerSpec extends Specification {
 ```
 
 
-##### Running Tests
-```bash
-grails test-app
+##### Test Hello Work Method
+```groovy
+// Test Controller
+class SimpleController {
+    def hello() {
+        render "hello"
+    }
+}
+
+// Test class
+import grails.test.mixin.TestFor
+import spock.lang.Specification
+@TestFor(SimpleController)
+class SimpleControllerSpec extends Specification {
+
+    void "test hello"() {
+        when:
+        controller.hello()
+
+        then:
+        response.text == 'hello'
+    }
+}
+
 ```
 
 
