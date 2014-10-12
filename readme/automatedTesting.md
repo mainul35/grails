@@ -75,7 +75,11 @@ class SimpleControllerSpec extends Specification {
 
 
 ##### Blocks and Phases
-1.
+1. setup           :    The setup block is where we do any setup work for the feature that we are describing.
+2. when & then     :    The when and then blocks always occur together. They describe a stimulus and the expected response. Whereas when blocks may contain arbitrary code, then blocks are restricted to conditions, exception conditions, interactions, and variable definitions. A feature method may contain multiple pairs of when-then blocks.
+4. expect          :    An expect block is more limited than a then block in that it may only contain conditions and variable definitions.
+5. cleanup         :    A cleanup block may only be followed by a where block, and may not be repeated.
+6. where           :    A where block always comes last in a method, and may not be repeated. It is used to write data-driven feature methods.
 
 
 
