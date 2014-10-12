@@ -29,8 +29,8 @@ grails test-app
 
 
 ##### Test Mixin Basics
-@TestFor(BookController)            : The TestFor annotation defines the class under test and will automatically create a field for the type of class under test.
-@Mock([Book, Author, BookService])  : The Mock annotation creates mock version of any collaborators. There is an in-memory implementation of GORM that will simulate most interactions with the GORM API.
+1. @TestFor(BookController)            : The TestFor annotation defines the class under test and will automatically create a field for the type of class under test.
+2. @Mock([Book, Author, BookService])  : The Mock annotation creates mock version of any collaborators. There is an in-memory implementation of GORM that will simulate most interactions with the GORM API.
 
 ##### Unit Testing Controllers Example
 ```groovy
@@ -40,7 +40,9 @@ import spock.lang.Specification
 class SimpleControllerSpec extends Specification {
 
     void "test methodNameOfController"() {
+    
     }
+    
 }
 ```
 
