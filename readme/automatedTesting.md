@@ -47,7 +47,7 @@ class SimpleControllerSpec extends Specification {
 ```
 
 
-##### Test Hello Work Method
+##### Test Hello World Method
 ```groovy
 // Test Controller
 class SimpleController {
@@ -74,13 +74,12 @@ class SimpleControllerSpec extends Specification {
 ```
 
 
-##### Running Tests
-```bash
-grails test-app
-```
+##### Blocks and Phases
+1.
 
 
-##### Running Tests
-```bash
-grails test-app
-```
+
+
+
+### References
+[Spock Basics](https://code.google.com/p/spock/wiki/SpockBasics)
