@@ -268,7 +268,13 @@ class SimpleController {
 ```
 
 
-# Integration Testing
+## Integration Testing
+##### Create Integration  Test Class
+```bash
+1. grails create-integration-test
+2. grails create-integration-test simple
+3. grails create-integration-test com.miaisoft.tutotial.testing.Simple
+```
 
 
 
