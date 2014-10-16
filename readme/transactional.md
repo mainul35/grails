@@ -1,6 +1,6 @@
 ## Q. What is Transactional?
 A. Many man Explain many way. I think they all are right. Just I realize that if i have need Dependable DB Operation
- Then need Transactional use. When transactional true any system/Domain then if failed any DB operation then Rollback Hole process.
+ Then need Transactional use. When transactional true any system/Domain then if failed any DB operation then Rollback Hole database process of that method.
  
  Example:
     Let's we have Three Domain with one unique field.
