@@ -23,3 +23,13 @@ Controller Class:
 
 1. [DataInsertController.class](https://github.com/hmtmcse/grails/blob/master/project/GrailsForBeginner/grails-app/controllers/com/miaisoft/tutotial/gorm/transactionaltest/DataInsertController.groovy)
 
+Give Input and Test:
+
+1. Set params.name = "Touhid"; and then call below two method then it will save all.
+    + http://localhost:8221/GrailsForBeginner/dataInsert/save2Domain
+    + http://localhost:8221/GrailsForBeginner/dataInsert/saveWithoutTransactional
+    
+2. Again Set params.name = "mia"; and then call below two method then it will not save Because it was transactional.
+    + http://localhost:8221/GrailsForBeginner/dataInsert/save2Domain
+    + http://localhost:8221/GrailsForBeginner/dataInsert/saveWithTransactional
+
