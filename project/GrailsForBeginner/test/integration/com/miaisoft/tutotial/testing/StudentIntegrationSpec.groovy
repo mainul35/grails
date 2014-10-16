@@ -33,8 +33,6 @@ class StudentIntegrationSpec extends Specification {
         where:
         name                |       intake        |        program        |        section        |        studentID
         "Touhid Mia"        |   "1"               |    "CSE"              |       "11th"          |       "5465465454"
-
-
     }
 
 }
