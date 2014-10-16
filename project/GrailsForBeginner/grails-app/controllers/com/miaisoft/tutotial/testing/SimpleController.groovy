@@ -1,8 +1,11 @@
 package com.miaisoft.tutotial.testing
 
 import com.miaisoft.tutorial.testing.Simple
+import com.miaisoft.tutorial.testing.SimpleService
 
 class SimpleController {
+
+    SimpleService simpleService
 
     def index() {
         redirect action: 'hello'
@@ -38,6 +41,18 @@ class SimpleController {
         }
         else {
             render(view: "create", model: [bookInstance: simple])
+        }
+    }
+
+    def create(){
+        if (simpleService.create(params)) {
+            flash.message = message(
+                    code: 'default.created.message',
+                    args: [message(code: 'save', default: 'Saved'), simple.id])
+            redirect(action: "show")
+        }
+        else {
+            render(view: "create")
         }
     }
 
