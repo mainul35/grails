@@ -11,7 +11,7 @@ A. Many man Explain many way. I think they all are right. Just I realize that if
     
 Let's go Practical.
 
-Domain Class
+Domain Class:
 
 1. [Foo.class](https://github.com/hmtmcse/grails/blob/master/project/GrailsForBeginner/grails-app/domain/com/miaisoft/tutotial/gorm/transactionaltest/Foo.groovy)
 2. [Bar.class](https://github.com/hmtmcse/grails/blob/master/project/GrailsForBeginner/grails-app/domain/com/miaisoft/tutotial/gorm/transactionaltest/Bar.groovy)
@@ -19,7 +19,7 @@ Domain Class
 
 
 
-Controller Class
+Controller Class:
 
 1. [DataInsertController.class](https://github.com/hmtmcse/grails/blob/master/project/GrailsForBeginner/grails-app/controllers/com/miaisoft/tutotial/gorm/transactionaltest/DataInsertController.groovy)
 
