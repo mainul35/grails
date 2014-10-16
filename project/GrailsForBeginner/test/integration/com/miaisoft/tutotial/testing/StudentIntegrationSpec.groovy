@@ -10,8 +10,6 @@ import spock.lang.*
  */
 class StudentIntegrationSpec extends Specification {
 
-    static tran
-
     StudentService studentService
     SubjectService subjectService
 

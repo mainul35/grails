@@ -1,5 +1,5 @@
 ## Q. What is Transactional?
-## A. Many man Explain many way. I think they all are right. Just I realize that if i have need Dependable DB Operation
+A. Many man Explain many way. I think they all are right. Just I realize that if i have need Dependable DB Operation
  Then need Transactional use.
  
  Example:
