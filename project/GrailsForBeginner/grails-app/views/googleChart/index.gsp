@@ -13,13 +13,21 @@
         google.load("visualization", "1", {packages:["corechart"]});
         google.setOnLoadCallback(drawChart);
         function drawChart() {
-            GFB.graph.generate();
+            GFB.graph.generate("LINE","googleChart/lineChartData");
+            GFB.graph.generate("DONUT","googleChart/donutChartData");
+            GFB.graph.generate("PIE","googleChart/donutChartData");
+            GFB.graph.generate("ALU","googleChart/circleChartData");
+            GFB.graph.generate("COLUMN","googleChart/lineChartData");
         }
     </script>
     <meta name="layout" content="grap">
 </head>
 
 <body>
-<div id="chart_div" style="width: 1200px; height: 500px;"></div>
+<div id="line_chart" style="width: 1200px; height: 500px;"></div>
+<div id="donut_chart" style="width: 500px; height: 500px;"></div>
+<div id="pie_chart" style="width: 500px; height: 500px;"></div>
+<div id="circle_chart" style="width: 500px; height: 500px;"></div>
+<div id="column_chart" style="width: 1000px; height: 500px;"></div>
 </body>
 </html>

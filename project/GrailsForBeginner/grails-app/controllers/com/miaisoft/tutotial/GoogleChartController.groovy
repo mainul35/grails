@@ -6,8 +6,52 @@ class GoogleChartController {
 
     def index() {}
 
+    def circleChartData(){
+        def row = [];
+        def table = [];
+        row.add("Effort")
+        row.add("Amount given")
+        table.add(row)
 
-    def getData(){
+        row = []
+        row.add("All")
+        row.add(75)
+        table.add(row)
+        render(table as JSON);
+    }
+
+
+    def donutChartData(){
+        def row = [];
+        def table = [];
+        row.add("Task")
+        row.add("Hours per Day")
+        table.add(row)
+
+        row = []
+        row.add("Work")
+        row.add(11)
+        table.add(row)
+
+        row = []
+        row.add("Eat")
+        row.add(2)
+        table.add(row)
+
+        row = []
+        row.add("Commute")
+        row.add(2)
+        table.add(row)
+
+        row = []
+        row.add("Watch TV")
+        row.add(7)
+        table.add(row)
+        render(table as JSON);
+    }
+
+
+    def lineChartData(){
 
         def row = [];
         def table = [];
