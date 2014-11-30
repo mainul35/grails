@@ -8,7 +8,14 @@ class SimpleController {
     SimpleService simpleService
 
     def index() {
-        redirect action: 'hello'
+
+        def map = [:]
+        def list = []
+
+
+
+
+        render "hello"
     }
 
 
@@ -54,6 +61,12 @@ class SimpleController {
         else {
             render(view: "create")
         }
+    }
+
+
+    def dataStructure(){
+
+        render("Hi")
     }
 
 }

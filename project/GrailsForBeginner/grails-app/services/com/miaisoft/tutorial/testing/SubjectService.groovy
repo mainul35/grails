@@ -10,4 +10,8 @@ class SubjectService {
         def res = subject.save()
         return res;
     }
+
+    def test(){
+        return "Hi This is Touhid"
+    }
 }

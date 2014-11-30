@@ -13,10 +13,11 @@ class StudentIntegrationSpec extends Specification {
     StudentService studentService
     SubjectService subjectService
 
+
     void "test create student add Subject"() {
 
         when:
-        def student = studentService.create(["name":name,"studentID":studentID,"intake":intake,"program":program,"section":section])
+        def student = studentService.create(map)
 
         def params = [:]
         params.courseCode = "CSE-301"
@@ -31,8 +32,21 @@ class StudentIntegrationSpec extends Specification {
         Student.findById((Long) student.id) != null;
 
         where:
-        name                |       intake        |        program        |        section        |        studentID
-        "Touhid Mia"        |   "1"               |    "CSE"              |       "11th"          |       "5465465454"
+        map << {
+
+            SubjectService subjectService1 = new SubjectService()
+
+            def x = subjectService1.test()
+
+            [
+                    [ name: "Touhid Mia 1",studentID:"1",intake:x,program:"program",section:"section"],
+                    [ name: "Touhid Mia 2",studentID:"1",intake:"intake",program:"program",section:"section"],
+                    [ name: "Touhid Mia 3",studentID:"1",intake:"intake",program:"program",section:"section"],
+            ]
+        }()
+
+
+
     }
 
 }
