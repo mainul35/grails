@@ -75,10 +75,13 @@ GFB.graph = (function () {
             var data = google.visualization.arrayToDataTable(res);
             var options = {
                 pieHole: 0.9,
-                pieResidueSliceColor:"green",
+                backgroundColor:{stroke:"#666"},
+                pieSliceText: 'none',
+                pieStartAngle: 135,
+                tooltip: { trigger: 'none' },
                 slices: {
                     0: { color: 'red' },
-                    1: { color: 'transparent' }
+                    1: { color: '#666699' }
                 },
                 pieSliceTextStyle: {
                     color: 'black'

@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <asset:javascript src="lib/jquery-1.10.2.js"/>
     <asset:javascript src="system/gfb.js"/>
+    <asset:javascript src="lib/circles.js"/>
     <asset:javascript src="system/gfb.ajax.js"/>
 
     <asset:javascript src="graph/gfb.graph.js"/>

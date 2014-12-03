@@ -17,6 +17,10 @@ class GoogleChartController {
         row.add("All")
         row.add(75)
         table.add(row)
+        row = []
+        row.add("other")
+        row.add(25)
+        table.add(row)
         render(table as JSON);
     }
 
