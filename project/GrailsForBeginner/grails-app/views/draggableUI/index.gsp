@@ -43,6 +43,10 @@
         margin: 0 1em 1em 0;
         height: 50px;
     }
+
+    #sortable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+    #sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; }
+
     </style>
 
     <script>
@@ -66,7 +70,9 @@
                     .addClass( "ui-widget-header ui-corner-all" )
                     .prepend( "<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
 
+            $( "#sortable" ).sortable();
         });
+
     </script>
 </head>
 
@@ -135,6 +141,23 @@
         <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
     </div>
 </div>
+
+
+<ul id="sortable">
+    <li class="ui-state-default">1</li>
+    <li class="ui-state-default">2</li>
+    <li class="ui-state-default">3</li>
+    <li class="ui-state-default">4</li>
+    <li class="ui-state-default">5</li>
+    <li class="ui-state-default">6</li>
+    <li class="ui-state-default">7</li>
+    <li class="ui-state-default">8</li>
+    <li class="ui-state-default">9</li>
+    <li class="ui-state-default">10</li>
+    <li class="ui-state-default">11</li>
+    <li class="ui-state-default">12</li>
+</ul>
+
 
 
 

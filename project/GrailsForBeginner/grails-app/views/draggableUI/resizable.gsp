@@ -10,7 +10,6 @@
 <head>
     <title></title>
     <meta name="layout" content="draggable">
-
     <style>
     body {
         min-width: 1000px;
@@ -43,6 +42,7 @@
         margin: 0 1em 1em 0;
         height: 50px;
     }
+
     </style>
 
     <script>
@@ -60,6 +60,8 @@
 
             });
 
+            jQuery(".portlet").resizable();
+
             $( ".portlet" )
                     .addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
                     .find( ".portlet-header" )
@@ -67,6 +69,7 @@
                     .prepend( "<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
 
         });
+
     </script>
 </head>
 
