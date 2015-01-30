@@ -47,14 +47,30 @@
 
     <script>
         $(function() {
+            var startIndex  = 0,
+                    endIndex = 0,
+                    DIRECTION = "",
+                    UPPER="UPPER",
+                    LOWER="LOWER";
+
             $( ".column" ).sortable({
                 connectWith: ".column",
                 handle: ".portlet-header",
                 placeholder: "portlet-placeholder ui-corner-all",
                 stop:function(event, ui){
-                    console.log("End " + ui.item.index())
+                    endIndex =  ui.item.index();
+
+                    if((startIndex - endIndex) > 0){
+                        DIRECTION = UPPER
+                    }else{
+                        DIRECTION = LOWER
+                    }
+                    GFB.ajax.call({
+                        url: GFB.baseURL + "draggableUI/saveSorting?changeOrder=" + endIndex + "&direction=" + DIRECTION + "&id=" + ui.item.attr("db-id")
+                    });
                 },
                 start:function(event, ui){
+                    startIndex = ui.item.index();
                     console.log("Start " + ui.item.index())
                 }
 
@@ -78,7 +94,7 @@
 
 <div class="column ">
     <g:each in="${items}" var="item">
-        <div class="portlet">
+        <div class="portlet" db-id="${item?.id}">
             <div class="portlet-header">${item?.name}</div>
             <div class="portlet-content">${item?.description}</div>
         </div>
