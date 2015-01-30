@@ -1,6 +1,6 @@
 package com.miaisoft.tutotial
 
-import com.miaisoft.SortableSave
+import com.miaisoft.SortableDataHolder
 
 class DraggableUIController {
 
@@ -9,7 +9,7 @@ class DraggableUIController {
     def resizable(){}
 
     def saveSortable(){
-        [items:SortableSave.createCriteria().list{eq("isActive",true)}]
+        [items:SortableDataHolder.createCriteria().list{eq("isActive",true)}]
     }
 
 }

@@ -1,11 +1,11 @@
 package com.miaisoft
 
 
-class SortableSave {
+class SortableDataHolder {
 
     Integer id
     String name
-    Integer sortOrder
+    Integer sortingOrder
     Boolean isActive
     String description
 

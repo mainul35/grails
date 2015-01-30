@@ -18,7 +18,12 @@ class RestTestController {
     def get() {
         render("Well done This is GET Request.")
     }
+
     def post() {
+        render("Well done This is POST Request. Name = " + params.toString())
+    }
+
+    def postByJSON() {
         def prms = request.JSON;
         render("Well done This is POST Request. Name = " + prms.name)
     }
