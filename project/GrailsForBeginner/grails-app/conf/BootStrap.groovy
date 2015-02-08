@@ -1,9 +1,9 @@
-import grailsforbeginner.InitializerService
+//import grailsforbeginner.InitializerService
 
 class BootStrap {
 
     def init = { servletContext ->
-        InitializerService.initSortableContent();
+//        InitializerService.initSortableContent();
     }
     def destroy = {
     }
