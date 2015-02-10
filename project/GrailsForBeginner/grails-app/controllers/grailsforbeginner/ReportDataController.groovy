@@ -15,10 +15,6 @@ class ReportDataController {
                 println(it)
             }
         }
-
-
-
         render("Hi Janu")
-
     }
 }
