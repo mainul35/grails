@@ -23,12 +23,14 @@ class ShellService {
                 "lines":[],
                 "lastReadLine":0,
                 "lastAccess": System.currentTimeMillis(),
-                "destroy":0
+                "destroy":0,
+                "isEnd":0
         ]
         def response = [
                 "success":true,
                 "pid":0,
-                "lines":""
+                "lines":"",
+                "isEnd":0
         ]
         if(pid && !status.get("process-"+ pid)){
             pid = 0
@@ -57,6 +59,11 @@ class ShellService {
             currentStatus.put("lastAccess",System.currentTimeMillis())
             response.put("pid",pid)
             response.put("lines",stringBuilder.toString())
+
+            if (currentStatus.get("isEnd")){
+                response.put("isEnd",1)
+                status.remove("process-"+ pid)
+            }
             return response
         }
     }
@@ -75,6 +82,9 @@ class ShellService {
                     status.get("process-"+ pid).get("lines").add(line)
                 }
             }
+        }
+        if (status.get("process-"+ pid)){
+            status.get("process-"+ pid).put("isEnd",1)
         }
     }
 
