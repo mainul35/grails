@@ -47,6 +47,7 @@ class ShellService {
             StringBuilder stringBuilder = new StringBuilder();
             for (int i = startLine; i < currentLine; i++){
                 stringBuilder.append(currentStatus.get("lines").get(i));
+                stringBuilder.append(System.getProperty("line.separator"));
             }
             currentStatus.put("lastReadLine",currentLine)
             response.put("pid",pid)
