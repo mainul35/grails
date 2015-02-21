@@ -18,12 +18,11 @@ class ShellService {
 
 
     def run(String command, int pid = 0) {
-
         def map = [
                 "lines":[],
-                "lastReadLine":0
+                "lastReadLine":0,
+                "lastCheckLine":0
         ]
-
         def response = [
                 "success":true,
                 "pid":0,
