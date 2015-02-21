@@ -7,6 +7,7 @@ GFB.graph = (function () {
 
     var LINE = "LINE",
         PIE = "PIE",
+        CLICK = "CLICK",
         COLUMN = "COLUMN";
 
     return {
@@ -25,6 +26,8 @@ GFB.graph = (function () {
                       GFB.graph.circleChart(res);
                   }else if (type == "COLUMN"){
                       GFB.graph.columnChart(res);
+                  }else if (type == CLICK){
+                      GFB.graph.clickableColumnChart(res);
                   }
                 }
 
@@ -40,6 +43,11 @@ GFB.graph = (function () {
                 chart = new google.visualization.PieChart(document.getElementById(place));
             }else if (chartType == "COLUMN"){
                 chart = new google.visualization.ColumnChart(document.getElementById(place));
+            }else if (chartType == CLICK){
+                chart = new google.visualization.ColumnChart(document.getElementById(place));
+                google.visualization.events.addListener(chart, 'click', function(e){
+                    console.log("Click Me");
+                });
             }
             chart.draw(data, options);
         },
@@ -97,6 +105,14 @@ GFB.graph = (function () {
                 hAxis: {title: 'Month', titleTextStyle: {color: 'red'}}
             }
             GFB.graph.googleChartAPI(COLUMN,data,options,"column_chart");
+        },
+        clickableColumnChart:function(res){
+            var data = google.visualization.arrayToDataTable(res);
+            var options = {
+                title: 'Clickable Chart',
+                hAxis: {title: 'Month', titleTextStyle: {color: 'red'}}
+            }
+            GFB.graph.googleChartAPI(CLICK,data,options,"click-able");
         }
 
 

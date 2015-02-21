@@ -18,6 +18,7 @@
             GFB.graph.generate("PIE","googleChart/donutChartData");
             GFB.graph.generate("ALU","googleChart/circleChartData");
             GFB.graph.generate("COLUMN","googleChart/lineChartData");
+            GFB.graph.generate("CLICK","googleChart/lineChartData");
         }
 
     </script>
@@ -46,6 +47,10 @@
         styleText:    true
     });
 </script>
+<g:message code="default.add.label"/>
+
+
+<div id="click-able" style="width: 1000px; height: 500px;"></div>
 
 <div class="circle" id="circle"></div>
 
@@ -55,6 +60,7 @@
 <div id="pie_chart" style="width: 500px; height: 500px;"></div>
 <div id="circle_chart" style="width: 500px; height: 500px;"></div>
 <div id="column_chart" style="width: 1000px; height: 500px;"></div>
+
 
 <style>
 .cell-block {
