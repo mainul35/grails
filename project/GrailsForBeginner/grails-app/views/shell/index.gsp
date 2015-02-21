@@ -29,21 +29,32 @@
     <asset:javascript src="lib/jquery-1.10.2.js"/>
 
 <script type="text/javascript">
-   setInterval(function () {
-        console.log("HI janu");
-       jQuery.ajax({
-           type: "POST",
-           url: "http://localhost:8221/GrailsForBeginner/shell/run?command=ping google.com -t",
-           dataType:"json",
-           success: function(res){
-               jQuery("#lines").append(res.lines)
-               jQuery('#lines').animate({scrollTop: $('#lines').prop("scrollHeight")}, 500);
-                console.log(res.lines)
-           }
-       })
 
 
-    },1000);
+
+    function ajaxRequest(command){
+
+        if(command != undefined ){
+            command = "?command=" + command;
+        }else{
+            command = "";
+        }
+
+        jQuery.ajax({
+            type: "POST",
+            url: "http://localhost:8080/GrailsForBeginner/shell/run" + command,
+            dataType:"json",
+            success: function(res){
+                jQuery("#lines").append(res.lines)
+                jQuery('#lines').animate({scrollTop: $('#lines').prop("scrollHeight")}, 500);
+                setTimeout(function(){ajaxRequest()}, 1000);
+            }
+        })
+    }
+
+    jQuery(function(){
+        ajaxRequest("ping google.com -t")
+    }());
 
 </script>
 
@@ -52,7 +63,6 @@
 <body>
 
 <pre id="lines">
-    hello world
 </pre>
 </body>
 </html>

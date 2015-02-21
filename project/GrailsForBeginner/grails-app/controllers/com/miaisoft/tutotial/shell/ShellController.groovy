@@ -20,6 +20,7 @@ class ShellController {
             session.pid = res.pid
         }else{
             res = shellService.run(params.command, session.pid);
+            session.pid = res.pid
         }
         render(res as JSON)
     }

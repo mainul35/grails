@@ -9,6 +9,7 @@ class ShellService {
 
    public static def status = [:]
     public static boolean isTerminatorStarted = false;
+    public Integer terminateTime = 30000;
 
 
     public static int getRandomNumber() {
@@ -21,21 +22,24 @@ class ShellService {
         def map = [
                 "lines":[],
                 "lastReadLine":0,
-                "lastCheckLine":0
+                "lastAccess": System.currentTimeMillis(),
+                "destroy":0
         ]
         def response = [
                 "success":true,
                 "pid":0,
                 "lines":""
         ]
-
-
+        if(pid && !status.get("process-"+ pid)){
+            pid = 0
+        }
         if (!pid){
             int id = getRandomNumber();
             status.put("process-"+ id, map);
             Thread.start {
                 runShellCommand(command, id)
             }
+            terminator();
             response.put("pid",id)
             return response;
         }else{
@@ -50,26 +54,49 @@ class ShellService {
                 stringBuilder.append(System.getProperty("line.separator"));
             }
             currentStatus.put("lastReadLine",currentLine)
+            currentStatus.put("lastAccess",System.currentTimeMillis())
             response.put("pid",pid)
             response.put("lines",stringBuilder.toString())
             return response
         }
     }
 
+
     private void runShellCommand(String commands, int pid){
         def process = commands.execute();
         process.in.eachLine { line ->
-            println line
-            status.get("process-"+ pid).get("lines").add(line)
+            if (status.get("process-"+ pid)){
+                int isDestroy = (int) status.get("process-"+ pid).get("destroy");
+                println(line + " isDestroy ==  " + isDestroy)
+                if (isDestroy){
+                    status.remove("process-"+ pid)
+                    process.destroy();
+                }else{
+                    status.get("process-"+ pid).get("lines").add(line)
+                }
+            }
         }
     }
 
 
-    private void tarminator(){
+    private void terminator(){
         if (!isTerminatorStarted){
             isTerminatorStarted = true
             Thread.start {
-
+                while (true){
+                    if (status.size() == 0){
+                        isTerminatorStarted = false
+                        break;
+                    }
+                    Thread.sleep(terminateTime);
+                    def timeSpan = System.currentTimeMillis() - terminateTime;
+                    status.each {
+                        def lastAccess = it.value.get("lastAccess")
+                        if (lastAccess < timeSpan){
+                            it.value.put("destroy",1)
+                        }
+                    }
+                }
             }
         }
     }
