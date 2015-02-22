@@ -69,7 +69,13 @@ class ShellService {
     }
 
 
-    private void runShellCommand(String commands, int pid){
+    private void runShellCommand(String command, int pid){
+         def commands = ""
+        if (System.properties['os.name'].toLowerCase().contains('windows')) {
+            commands = command;
+        } else {
+            commands = ['bash', '-c', command];
+        }
         def process = commands.execute();
         process.in.eachLine { line ->
             if (status.get("process-"+ pid)){
