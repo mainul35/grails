@@ -50,11 +50,11 @@
                 }else{
                     var placed =  jQuery("#console-box .line:nth-last-child(1)"),
                             consoleClass = "console-output-" + jQuery("#console-box .console-output").size() ;
-                    placed.before('<div class="line"><div class="line-user"><label>web-shell #</label></div><div class="'+ klass +'">' + val + '</div></div>');   
+                    placed.before('<div class="line"><div class="line-user"><label>web-shell #</label></div><div class="'+ klass +'">' + val + '</div></div>');
                     placed.before('<pre class="console-output '+ consoleClass + '"></pre>');
                     jQuery(".console-input-panel").hide()
                     ajaxRequest(consoleClass,val);
-                }                
+                }
                 promptInput.val("");
             }
         });        
