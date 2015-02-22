@@ -47,6 +47,8 @@
                         klass = "line-text";
                 if(val == undefined || val == ""){
                     klass = "empty-line";
+                    var placed =  jQuery("#console-box .line:nth-last-child(1)");
+                    placed.before('<div class="line"><div class="line-user"><label>web-shell #</label></div><div class="'+ klass +'">' + val + '</div></div>');
                 }else{
                     var placed =  jQuery("#console-box .line:nth-last-child(1)"),
                             consoleClass = "console-output-" + jQuery("#console-box .console-output").size() ;
