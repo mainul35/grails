@@ -7,7 +7,7 @@ class ReportDataController {
 
     def index() {
 
-        ReportData reportData = ReportData(createDate:new Date(), operation: MyConstent.CREATED, count:1, amount:10.10)
+        ReportData reportData = new ReportData(createDate: new Date().clearTime(), operation: MyConstent.CREATED, count:1, amount:10.10)
         reportData.save()
 
         if (reportData.hasErrors()){
