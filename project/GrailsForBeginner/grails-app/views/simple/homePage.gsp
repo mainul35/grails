@@ -13,5 +13,7 @@
 
 <body>
 
+<g:assetPath src="asd"/>
+
 </body>
 </html>
