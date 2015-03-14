@@ -203,10 +203,17 @@ class RestTestController {
         map.put("subject","subject-5")
         map.put("message","message message message message message message message message message message message message message message message message message message message message message message message message message message message message message message message message message message message message ")
         list.add(map)
-
-
-
         render(["notices":list] as JSON);
+    }
+
+    
+    def registerDevice(){
+       def map = [:]
+        map.put("gcmId",params.gcmId);
+        map.put("deviceId",params.deviceId);
+        map.put("id",1);
+        println(map)
+        render([deviceDetails:map] as JSON);
     }
 
 }
