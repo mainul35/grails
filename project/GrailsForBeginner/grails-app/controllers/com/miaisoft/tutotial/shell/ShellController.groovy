@@ -24,4 +24,8 @@ class ShellController {
         }
         render(res as JSON)
     }
+
+    def runDir(){
+        shellService.runShellCommand("dir",0)
+    }
 }

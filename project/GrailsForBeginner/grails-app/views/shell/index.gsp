@@ -25,7 +25,7 @@
 
         jQuery.ajax({
             type: "POST",
-            url: "http://localhost:8080/GrailsForBeginner/shell/run" + command,
+            url: "<g:createLink uri="/"/>shell/run" + command,
             dataType:"json",
             success: function(res){
                 jQuery("." + consoleClass).append(res.lines)

@@ -78,6 +78,7 @@ class ShellService {
         }
         def process = commands.execute();
         process.in.eachLine { line ->
+            println "Running"
             if (status.get("process-"+ pid)){
                 int isDestroy = (int) status.get("process-"+ pid).get("destroy");
                 println(line + " isDestroy ==  " + isDestroy)
