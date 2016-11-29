@@ -21,7 +21,7 @@ class SimpleControllerSpec extends Specification {
         controller.redirectTo()
 
         then:
-        response.redirectedUrl == "/simple/redirectHere1"
+        response.redirectedUrl == "/simple/redirectHere"
     }
 
 

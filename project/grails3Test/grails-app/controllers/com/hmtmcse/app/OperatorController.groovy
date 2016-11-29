@@ -101,4 +101,9 @@ class OperatorController {
         redirect(action: "index")
     }
 
+    def bismillah() {
+        render "Bismillahir Rahmanier Rahim"
+    }
+
+
 }
