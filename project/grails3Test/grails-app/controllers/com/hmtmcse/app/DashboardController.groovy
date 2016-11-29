@@ -1,4 +1,4 @@
-package com.hmtmcse
+package com.hmtmcse.app
 
 class DashboardController {
 

@@ -1,4 +1,6 @@
-package com.hmtmcse
+package com.hmtmcse.app
+
+import com.hmtmcse.Operator
 
 class AuthenticationController {
 
