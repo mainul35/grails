@@ -1,2 +1,3 @@
 rootProject.name = 'g3p'
+include 'appPlugin/bismillahPlugin'
 
