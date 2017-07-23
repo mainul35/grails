@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <asset:stylesheet src="application.css"/>
+    <asset:stylesheet src="plugin1.css"/>
 
     <g:layoutHead/>
 </head>

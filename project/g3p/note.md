@@ -26,3 +26,38 @@ Need to Know
 	a. Collection<Class> classes()
 2. GrailsApplicationPostProcessor
 3. GrailsApp
+
+
+Plugin 
+1. CorePluginFinder
+2. pluginManager.loadPlugins()
+3. attemptLoadPlugins(ClassLoader gcl)
+4. CorePluginFinder
+5. loadCorePluginsFromResources
+6. attemptCorePluginClassLoad
+
+
+
+
+Lookup
+------------------------------------------------------------------------
+1. GrailsAutoConfiguration			>>>			grailsApplicationPostProcessor
+2. GrailsApplicationPostProcessor	>>>			GrailsApplicationPostProcessor
+		pluginManager = new DefaultGrailsPluginManager(grailsApplication)
+		initializeGrailsApplication(ApplicationContext applicationContext)
+		pluginManager.loadPlugins()
+3. DefaultGrailsPluginManager	>>>			attemptLoadPlugins(ClassLoader gcl)
+		List<GrailsPlugin> findCorePlugins()
+		
+		
+		
+
+Need to Study
+--------------------------------------------------------------------------
+1. ApplicationContextAware
+2. customizePluginManager(pluginManager)
+
+
+Plugin Loadin
+------------------------------------
+1. loadCorePluginsFromResources

@@ -7,7 +7,7 @@ class GlobalConfigService {
     public static boolean isGeneratingSchema = false;
 
     def itemsPerPage() {
-        return 10;
+        return 5;
     }
 
     public static String getUID(){
