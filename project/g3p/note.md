@@ -61,3 +61,6 @@ Need to Study
 Plugin Loadin
 ------------------------------------
 1. loadCorePluginsFromResources
+
+application.getClassLoader().getResource("META-INF/grails-plugin.xml")
+applicationContext.getClassLoader().getResource("META-INF/grails-plugin.xml")

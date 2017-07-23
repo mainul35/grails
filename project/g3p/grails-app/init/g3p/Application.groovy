@@ -12,7 +12,7 @@ class Application extends GrailsAutoConfiguration {
 
     @Bean
     GrailsApplicationPostProcessor grailsApplicationPostProcessor() {
-        return new GrailsApplicationPostProcessor( this, applicationContext, classes() as Class[])
+        return new ExperimentGrailsApplicationPostProcessor( this, applicationContext, classes() as Class[])
     }
 
 
