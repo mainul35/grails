@@ -35,7 +35,7 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"
-    compile files('glib/bismillahPlugin-0.1.jar')
+//    compile files('glib/bismillahPlugin-0.1.jar')
     compile "org.springframework.boot:spring-boot-starter-actuator"
     compile "org.springframework.boot:spring-boot-starter-tomcat"
     compile "org.grails:grails-web-boot"
