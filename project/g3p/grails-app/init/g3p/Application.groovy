@@ -12,9 +12,9 @@ class Application extends GrailsAutoConfiguration {
 
     @Bean
     GrailsApplicationPostProcessor grailsApplicationPostProcessor() {
-        File file = new File("glib/bismillahPlugin-0.1.jar")
-        URL[] urls = [file.toURI().toURL()]
-        Thread.currentThread().setContextClassLoader(new URLClassLoader (urls, applicationContext.getClassLoader()))
+//        File file = new File("glib/bismillahPlugin-0.1.jar")
+//        URL[] urls = [file.toURI().toURL()]
+//        Thread.currentThread().setContextClassLoader(new URLClassLoader (urls, applicationContext.getClassLoader()))
         return new ExperimentGrailsApplicationPostProcessor( this, applicationContext, classes() as Class[])
     }
 

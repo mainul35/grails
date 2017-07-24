@@ -21,6 +21,12 @@ Note: You can also declare the dependency within the dependencies block, however
 ```
 
 
+Command
+---
+-> Pack Plugin
+/f/libs/grails-3.3.0.RC1/bin/grails pack-plugin
+
+
 Need to Know
 1. GrailsAutoConfiguration
 	a. Collection<Class> classes()
