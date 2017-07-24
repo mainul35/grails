@@ -10,7 +10,7 @@ buildscript {
 }
 
 version "0.1"
-group "bismillahplugin"
+group "bismillahplugin2"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
@@ -26,7 +26,6 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'app-lib', include: '*.jar')
-
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"

@@ -27,6 +27,7 @@ repositories {
 
 //grails {
 //    plugins {
+//        compile project(':appPlugin/bismillahPlugin2')
 //        compile project(':appPlugin/bismillahPlugin')
 //    }
 //}
@@ -35,6 +36,9 @@ repositories {
 
 
 dependencies {
+
+    compile fileTree(dir: 'libs', include: '*.jar')
+
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
