@@ -7,7 +7,7 @@ import com.touhid.JarTesting
 class BismillahPluginController {
 
     def index() {
-        render("Bismillah Plugin Index.")
+        render view: "/abc.gsp"
     }
 
     def lib(){
