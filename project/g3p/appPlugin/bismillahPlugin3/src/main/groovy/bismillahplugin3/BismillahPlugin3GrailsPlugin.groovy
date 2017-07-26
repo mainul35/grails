@@ -1,6 +1,9 @@
 package bismillahplugin3
 
 import grails.plugins.*
+import org.springframework.web.servlet.i18n.CookieLocaleResolver
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor
+import org.springframework.context.support.ReloadableResourceBundleMessageSource
 
 class BismillahPlugin3GrailsPlugin extends Plugin {
 
@@ -41,8 +44,15 @@ Brief summary/description of the plugin.
 //    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
 
     Closure doWithSpring() { {->
-            // TODO Implement runtime spring config (optional)
+        messageSource(ReloadableResourceBundleMessageSource) {
+            basename = "WEB-INF/i18n/messages"
         }
+        localeChangeInterceptor(LocaleChangeInterceptor) {
+            paramName = "lang"
+        }
+        localeResolver(CookieLocaleResolver)
+
+    }
     }
 
     void doWithDynamicMethods() {
