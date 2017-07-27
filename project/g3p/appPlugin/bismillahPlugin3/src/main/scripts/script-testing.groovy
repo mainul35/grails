@@ -1,5 +1,1 @@
-description "Example description", "grails example-usage"
-
-println "Example Script"
-
-gradle.assemble()
+println "Prent Script"

@@ -1,0 +1,37 @@
+def LIBS = "libs"
+def MAIN = "src/main"
+def WEB_APP = MAIN + "/webapp"
+def WEB_INF = WEB_APP + "/WEB-INF"
+def BUILD_DIR = "build"
+def BUILD_LIB = BUILD_DIR + "/libs"
+def BUILD_ZIP = BUILD_LIB + "/build_zip"
+
+
+task cleanAll(type: Delete){
+    doLast{
+        print BUILD_ZIP
+
+        followSymlinks = true
+    }
+}
+
+
+task copyAllContent(type: Copy){
+    doLast{
+        from WEB_INF
+        from LIBS
+        into BUILD_ZIP
+    }
+}
+
+
+task distributionPacking(type: Copy) {
+    println "Coping"
+    doLast {
+
+        from 'src/main/webapp'
+        into 'build'
+    }
+}
+
+
