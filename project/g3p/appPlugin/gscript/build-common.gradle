@@ -24,14 +24,42 @@ task copyAllContent(type: Copy){
     }
 }
 
-
-task distributionPacking(type: Copy) {
-    println "Coping"
-    doLast {
-
-        from 'src/main/webapp'
-        into 'build'
+task copyData(){
+    doLast{
+        println 'copy endpoint'
+        copy{
+            from 'src/main/webapp'
+            into 'build/new'
+        }
     }
 }
 
 
+task deleteIt(type: Delete) {
+    delete 'touhid'
+    followSymlinks = true
+}
+
+task other(dependsOn: ['deleteIt','copyData']){
+    doLast{
+        println 'other Task'
+    }
+}
+
+
+
+
+
+
+
+task distributionPacking() {
+    doFirst{
+        File configFile = file('src')
+//        println "Contents of $configFile.name"
+//        println fileTree("src/main/webapp").files.name
+//        println "Starting Task"
+    }
+}
+
+
+distributionPacking.dependsOn other
