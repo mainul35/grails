@@ -7,59 +7,55 @@ def BUILD_LIB = BUILD_DIR + "/libs"
 def BUILD_ZIP = BUILD_LIB + "/build_zip"
 
 
-task cleanAll(type: Delete){
-    doLast{
-        print BUILD_ZIP
-
-        followSymlinks = true
-    }
+task cleanAll(type: Delete) {
+    delete BUILD_ZIP, BUILD_DIR + "/plugin.zip"
+    followSymlinks = true
 }
 
 
-task copyAllContent(type: Copy){
+task copyAllContent(){
     doLast{
-        from WEB_INF
-        from LIBS
-        into BUILD_ZIP
-    }
-}
-
-task copyData(){
-    doLast{
-        println 'copy endpoint'
         copy{
-            from 'src/main/webapp'
-            into 'build/new'
+            from LIBS
+            into BUILD_ZIP + "/libs"
+        }
+
+        copy{
+            from WEB_INF
+            into BUILD_ZIP + "/WEB-INF"
+        }
+
+        copy{
+            from WEB_APP
+            exclude "WEB-INF"
+            into BUILD_ZIP + "/public"
         }
     }
 }
 
-
-task deleteIt(type: Delete) {
-    delete 'touhid'
-    followSymlinks = true
+task archiveBinary(type: Zip) {
+    from BUILD_ZIP
+    archiveName 'plugin.zip'
+    destinationDir(file(BUILD_DIR))
 }
-
-task other(dependsOn: ['deleteIt','copyData']){
-    doLast{
-        println 'other Task'
-    }
-}
-
-
-
-
-
-
 
 task distributionPacking() {
     doFirst{
-        File configFile = file('src')
-//        println "Contents of $configFile.name"
-//        println fileTree("src/main/webapp").files.name
-//        println "Starting Task"
+        println project.name
+        println name
+        println projectDir
+        tasks.cleanAll.execute()
+        tasks.copyAllContent.execute()
+        tasks.archiveBinary.execute()
     }
 }
 
 
-distributionPacking.dependsOn other
+
+
+
+
+
+
+
+

@@ -29,7 +29,7 @@ grails {
     plugins {
 //        compile project(':appPlugin/bismillahPlugin2')
 //        compile project(':appPlugin/bismillahPlugin')
-        compile project(':appPlugin/bismillahPlugin3')
+//        compile project(':appPlugin/bismillahPlugin3')
     }
 }
 
