@@ -1,0 +1,6 @@
+#Sun, 30 Jul 2017 13:42:22 +0600
+
+info.app.version=unspecified
+info.app.name=app
+grails.env=development
+info.app.grailsVersion=3.2.9
