@@ -1,4 +1,6 @@
 package com.hmtmcse.test;
 
-public class CommonPluginConfiguration {
+import grails.plugins.Plugin;
+
+public class CommonPluginConfiguration extends Plugin {
 }

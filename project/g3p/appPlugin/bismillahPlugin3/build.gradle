@@ -14,7 +14,6 @@ group "bismillahplugin3"
 apply plugin:"idea"
 apply plugin:"org.grails.grails-plugin"
 apply plugin:"org.grails.grails-gsp"
-apply from : "../gscript/build-common.gradle"
 
 repositories {
     mavenLocal()

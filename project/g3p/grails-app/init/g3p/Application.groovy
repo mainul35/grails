@@ -22,8 +22,8 @@ class Application extends GrailsAutoConfiguration {
 
 
 //        Basic Grails Plugin Loading With Library
-        File file = new File("glib/bismillahPlugin-0.1.jar")
-        applicationContext.getClassLoader().addURL(file.toURI().toURL())
+//        File file = new File("glib/bismillahPlugin-0.1.jar")
+//        applicationContext.getClassLoader().addURL(file.toURI().toURL())
 //        file = new File("glib/bismillahPlugin2-0.1.jar")
 //        applicationContext.getClassLoader().addURL(file.toURI().toURL())
 //        file = new File("ex-libs/jartesting-1.0.jar")
