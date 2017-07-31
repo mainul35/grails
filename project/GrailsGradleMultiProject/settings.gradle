@@ -1,1 +1,3 @@
 rootProject.name = 'GrailsGradleMultiProject'
+include 'starter'
+include 'coreApp'
