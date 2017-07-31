@@ -83,7 +83,5 @@
     <orderEntry type="library" name="Gradle: org.codehaus.jsr166-mirror:jsr166y:1.7.0" level="project" />
     <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.goldmansachs:gs-collections-api:5.1.0" level="project" />
-    <orderEntry type="module" module-name="app_main" exported="" />
-    <orderEntry type="module" module-name="app" exported="" />
   </component>
 </module>

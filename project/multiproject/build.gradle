@@ -15,6 +15,7 @@ ext {
     grailsPlugins = ['plugin']
 }
 
+
 subprojects { project ->
     boolean isGrailsApp = grailsApps.contains(project.name)
     boolean isGrailsPlugin = grailsPlugins.contains(project.name)
@@ -42,10 +43,13 @@ subprojects { project ->
         }
 
         dependencies {
+
             compile "org.springframework.boot:spring-boot-starter-logging"
             compile "org.springframework.boot:spring-boot-autoconfigure"
             compile "org.grails:grails-core"
             console "org.grails:grails-console"
+            compile fileTree(dir: 'libs', include: '*.jar')
+
         }
 
         if ( isGrailsApp ) {
@@ -66,6 +70,7 @@ subprojects { project ->
                 testCompile "org.grails.plugins:geb"
                 testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
                 testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+
             }
         }
         
@@ -104,11 +109,11 @@ subprojects { project ->
     }
 
     afterEvaluate {
-        if ( isGrailsProject ) {
-            assets {
-                minifyJs = true
-                minifyCss = true
-            }
-        }
+//        if ( isGrailsProject ) {
+//            assets {
+//                minifyJs = true
+//                minifyCss = true
+//            }
+//        }
     }
 }

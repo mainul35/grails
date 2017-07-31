@@ -28,8 +28,8 @@ repositories {
 grails {
     plugins {
 //        compile project(':appPlugin/bismillahPlugin2')
-//        compile project(':appPlugin/bismillahPlugin')
-//        compile project(':appPlugin/bismillahPlugin3')
+        compile project(':core/app')
+        compile project(':appPlugin/bismillahPlugin')
     }
 }
 
