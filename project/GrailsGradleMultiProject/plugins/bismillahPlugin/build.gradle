@@ -1,5 +1,12 @@
 version "0.1"
 group "bismillahPlugin"
+
+grails {
+    plugins {
+        compile project(':coreApp')
+    }
+}
+
 grailsPublish {
     // TODO: Provide values here
     user = 'user'
