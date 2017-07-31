@@ -6,4 +6,8 @@ class TouhidController {
 
         render("Touhid Index")
     }
+
+    def vai() {
+        render("vai Index")
+    }
 }

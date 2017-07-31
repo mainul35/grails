@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fed9ef1-3b1a-447e-8d12-520ee44a9947" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../corePluginModel/core/grails-app/controllers/com/hmtmcse/TouhidController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/controllers/com/hmtmcse/WrapperController.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../corePluginModel/core/grails-app/views/touhid/index.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../corePluginModel/build.gradle" afterPath="$PROJECT_DIR$/../corePluginModel/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../corePluginModel/core/build.gradle" afterPath="$PROJECT_DIR$/../corePluginModel/core/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../corePluginModel/core/src/main/groovy/core/CoreGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/../corePluginModel/core/src/main/groovy/core/CoreGrailsPlugin.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/plugin/plugin_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/plugin/plugin_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/controllers/com/hmtmcse/TouhidController.groovy" afterPath="$PROJECT_DIR$/../corePluginModel/core/grails-app/controllers/com/hmtmcse/TouhidController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="59" />
+            <state relative-caret-position="357">
+              <caret line="66" column="78" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -130,7 +127,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -2621,7 +2618,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -2827,15 +2824,15 @@
       <option name="presentableId" value="Default" />
       <updated>1501457992697</updated>
       <workItem from="1501457995509" duration="2661000" />
-      <workItem from="1501469680781" duration="3929000" />
+      <workItem from="1501469680781" duration="4068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6590000" />
+    <option name="totallyTimeSpent" value="6729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -3409,14 +3406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -3437,6 +3426,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="66" column="78" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="78" />
           <folding />
         </state>
       </provider>
