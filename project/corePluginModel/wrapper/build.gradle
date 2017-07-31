@@ -1,9 +1,0 @@
-
-version "0.1"
-group "wrapper"
-
-grails {
-    plugins {
-        compile project(':core')
-    }
-}

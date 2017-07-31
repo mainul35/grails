@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="coreApp_ast" target="1.8" />
+      <module name="coreApp_integrationTest" target="1.8" />
+      <module name="coreApp_main" target="1.8" />
+      <module name="coreApp_test" target="1.8" />
+      <module name="plugins_blog_ast" target="1.8" />
+      <module name="plugins_blog_integrationTest" target="1.8" />
+      <module name="plugins_blog_main" target="1.8" />
+      <module name="plugins_blog_test" target="1.8" />
+      <module name="webApp_integrationTest" target="1.8" />
+      <module name="webApp_main" target="1.8" />
+      <module name="webApp_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

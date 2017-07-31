@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":plugins/blog" external.linked.project.path="$MODULE_DIR$/../../../../plugins/blog" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="com.hmtmcse.plugin.blog" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../plugins/blog">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../plugins/blog/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../plugins/blog/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../plugins/blog/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
