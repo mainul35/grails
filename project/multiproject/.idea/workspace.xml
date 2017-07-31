@@ -2,69 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fed9ef1-3b1a-447e-8d12-520ee44a9947" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/apple-touch-icon-retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/database_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/database_delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/database_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/database_save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/database_table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/exclamation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/house.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/information.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/shadow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/sorted_asc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/skin/sorted_desc.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/gradle.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/settings.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/images/grails-cupsonly-logo-white.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/javascripts/application.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/javascripts/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/javascripts/jquery-2.2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/stylesheets/application.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/stylesheets/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/stylesheets/errors.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/stylesheets/grails.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/stylesheets/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/assets/stylesheets/mobile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/conf/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/conf/logback.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/conf/spring/resources.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/controllers/webapp/UrlMappings.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_cs_CZ.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_da.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_de.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_fr.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_it.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_nb.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_nl.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_pl.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_pt_BR.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_pt_PT.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_ru.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_sv.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_th.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/i18n/messages_zh_CN.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/init/webapp/Application.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/init/webapp/BootStrap.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/views/error.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/views/index.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/views/layouts/main.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/grails-app/views/notFound.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../corePluginModel/core/src/main/resources/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CoreAndPluginWebApplication/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CoreAndPluginWebApplication/settings.gradle" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/build.gradle" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -2860,7 +2800,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7387000" />
+    <option name="totallyTimeSpent" value="7863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />

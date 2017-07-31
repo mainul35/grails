@@ -1,2 +1,9 @@
 version "0.1"
 group "webApp"
+
+
+grails {
+    plugins {
+        compile project(':core')
+    }
+}
