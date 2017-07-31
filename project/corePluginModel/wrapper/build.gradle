@@ -2,6 +2,8 @@
 version "0.1"
 group "wrapper"
 
-dependencies {
-    compile project(':core')
+grails {
+    plugins {
+        compile project(':core')
+    }
 }
