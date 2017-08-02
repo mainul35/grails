@@ -2,7 +2,7 @@
 grails:
     profile: web-plugin
     codegen:
-        defaultPackage: coreapp
+        defaultPackage: bismillahplugin
     spring:
         transactionManagement:
             proxies: false
