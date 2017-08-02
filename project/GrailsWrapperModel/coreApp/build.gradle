@@ -1,0 +1,4 @@
+version "0.1"
+group "coreapp"
+
+apply from : '../gradleFiles/common.gradle'

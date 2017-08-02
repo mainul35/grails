@@ -2,112 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fed9ef1-3b1a-447e-8d12-520ee44a9947" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/core/grails-app/controllers/com/hmtmcse/controllers/BismillahCoreController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/core/grails-app/views/bismillahCore/index.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/core/src/main/resources/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/core/src/main/resources/public/js/app.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../CoreAndPluginWebApplication/core/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/conf/application.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/conf/logback.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/controllers/com/hmtmcse/TouhidController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/controllers/core/UrlMappings.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/init/core/Application.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/init/core/BootStrap.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/views/error.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/views/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/views/layouts/main.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/views/notFound.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/grails-app/views/touhid/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/src/main/groovy/core/CoreGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/core/src/main/resources/public/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/note.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/conf/application.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/conf/logback.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/controllers/pluginone/UrlMappings.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/init/pluginone/Application.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/init/pluginone/BootStrap.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/views/error.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/views/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/views/layouts/main.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-app/views/notFound.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grails-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grailsw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/grailsw.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/settings.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/plugins/pluginOne/src/main/groovy/pluginone/PluginOneGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/settings.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/apple-touch-icon-retina.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/grails-cupsonly-logo-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/database_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/database_delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/database_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/database_save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/database_table.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/exclamation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/house.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/information.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/shadow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/sorted_asc.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/skin/sorted_desc.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/images/spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/javascripts/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/javascripts/jquery-2.2.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/stylesheets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/stylesheets/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/stylesheets/errors.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/stylesheets/grails.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/stylesheets/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/assets/stylesheets/mobile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/conf/application.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/conf/logback.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/conf/spring/resources.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/controllers/com/hmtmcse/WrapperController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/controllers/wrapper/UrlMappings.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_cs_CZ.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_da.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_de.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_es.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_fr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_it.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_ja.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_nb.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_nl.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_pl.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_pt_BR.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_pt_PT.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_ru.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_sv.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_th.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/i18n/messages_zh_CN.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/init/wrapper/Application.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/init/wrapper/BootStrap.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/views/error.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/views/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/views/layouts/main.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../corePluginModel/wrapper/grails-app/views/notFound.gsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CoreAndPluginWebApplication/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../CoreAndPluginWebApplication/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -145,8 +40,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="78" column="52" lean-forward="false" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,13 +74,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <marker date="1501469089104" expanded="true" signature="694:1371" ph="..." />
-                <marker date="1501469089104" expanded="true" signature="1765:2012" ph="{...}" />
-                <marker date="1501469089104" expanded="true" signature="1775:2006" ph="..." />
-                <marker date="1501469089104" expanded="true" signature="2065:2212" ph="{...}" />
-                <marker date="1501469089104" expanded="true" signature="2075:2206" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,8 +82,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1519,7 +1418,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10482466968130" />
+        <entry key="$PROJECT_DIR$" value="10510210868740" />
         <entry key="$PROJECT_DIR$/app/build.gradle" value="1046673765" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2441891752" />
         <entry key="$PROJECT_DIR$/plugin/build.gradle" value="2017422973" />
@@ -2714,10 +2613,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1015" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -2759,7 +2658,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CoreAndPluginWebApplication" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="true" />
@@ -2899,48 +2798,49 @@
       <updated>1501457992697</updated>
       <workItem from="1501457995509" duration="2661000" />
       <workItem from="1501469680781" duration="4068000" />
+      <workItem from="1501518052048" duration="2091000" />
+      <workItem from="1501598742398" duration="296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7863000" />
+    <option name="totallyTimeSpent" value="10250000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Grails Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2952,26 +2852,26 @@
             <StateHolder>
               <option name="knownFactories">
                 <list>
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.2.9/8e0067133b1958b2c0fbbbc4b67f09d74a5ed7d5/grails-web-common-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.2.9/8c6c861877fee6aab43f37f5d2511a44d942322c/grails-plugin-codecs-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.2.9/2cff6d71e1ff86d673f2e1cea73cc9071da13bbe/grails-plugin-async-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.2.9/8b64092c399bb678bfb92c71387b75ce623f302a/grails-plugin-testing-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.2.9/aac28ca6edabed9165eefe9594347c220347a76b/grails-web-databinding-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.2.9/13840bb79f795917a26154c4b10cacc5ac71ff72/grails-web-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/services/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.2.9/2c0909b0b12f5204950b0df163c0a5f022929148/grails-plugin-controllers-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate5/6.0.10/e3376aaa0b568d1df73e7f2b0d39512b826566ba/hibernate5-6.0.10.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.2.9/fcf406ed0b7f38c3a4be3f36597661a6d50047f0/grails-plugin-rest-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.2.9/e384bac55499a63a9ac91e243fa1b1571b37f2f1/grails-plugin-interceptors-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.3/e857268f939b4b907ce91ff4f5217cfb97abcaa7/cache-3.0.3.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/services/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.2.9/8c6c861877fee6aab43f37f5d2511a44d942322c/grails-plugin-codecs-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate5/6.0.10/e3376aaa0b568d1df73e7f2b0d39512b826566ba/hibernate5-6.0.10.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.2.9/8e0067133b1958b2c0fbbbc4b67f09d74a5ed7d5/grails-web-common-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.2.9/2c0909b0b12f5204950b0df163c0a5f022929148/grails-plugin-controllers-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.2.9/e384bac55499a63a9ac91e243fa1b1571b37f2f1/grails-plugin-interceptors-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-taglib/3.2.9/38f75bbb282a6469c73dd4273e1b88f33cd27b8b/grails-web-taglib-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-gsp/3.2.9/325f3ecea17e77c853104f361dde95a1c9e709d3/grails-plugin-gsp-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.2.9/fcf406ed0b7f38c3a4be3f36597661a6d50047f0/grails-plugin-rest-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.2.9/2cff6d71e1ff86d673f2e1cea73cc9071da13bbe/grails-plugin-async-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.2.9/8b64092c399bb678bfb92c71387b75ce623f302a/grails-plugin-testing-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.2.9/aac28ca6edabed9165eefe9594347c220347a76b/grails-web-databinding-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.2.9/13840bb79f795917a26154c4b10cacc5ac71ff72/grails-web-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/grails.factories" />
                 </list>
               </option>
               <option name="traits">
@@ -3037,25 +2937,25 @@
             <StateHolder>
               <option name="knownFactories">
                 <list>
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.2.9/8e0067133b1958b2c0fbbbc4b67f09d74a5ed7d5/grails-web-common-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.2.9/8c6c861877fee6aab43f37f5d2511a44d942322c/grails-plugin-codecs-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.2.9/2cff6d71e1ff86d673f2e1cea73cc9071da13bbe/grails-plugin-async-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.2.9/aac28ca6edabed9165eefe9594347c220347a76b/grails-web-databinding-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.2.9/13840bb79f795917a26154c4b10cacc5ac71ff72/grails-web-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/services/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.2.9/2c0909b0b12f5204950b0df163c0a5f022929148/grails-plugin-controllers-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate5/6.0.10/e3376aaa0b568d1df73e7f2b0d39512b826566ba/hibernate5-6.0.10.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.2.9/fcf406ed0b7f38c3a4be3f36597661a6d50047f0/grails-plugin-rest-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.2.9/e384bac55499a63a9ac91e243fa1b1571b37f2f1/grails-plugin-interceptors-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.3/e857268f939b4b907ce91ff4f5217cfb97abcaa7/cache-3.0.3.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/services/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.2.9/8c6c861877fee6aab43f37f5d2511a44d942322c/grails-plugin-codecs-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate5/6.0.10/e3376aaa0b568d1df73e7f2b0d39512b826566ba/hibernate5-6.0.10.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.2.9/8e0067133b1958b2c0fbbbc4b67f09d74a5ed7d5/grails-web-common-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.2.9/2c0909b0b12f5204950b0df163c0a5f022929148/grails-plugin-controllers-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.2.9/e384bac55499a63a9ac91e243fa1b1571b37f2f1/grails-plugin-interceptors-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-taglib/3.2.9/38f75bbb282a6469c73dd4273e1b88f33cd27b8b/grails-web-taglib-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-gsp/3.2.9/325f3ecea17e77c853104f361dde95a1c9e709d3/grails-plugin-gsp-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.2.9/fcf406ed0b7f38c3a4be3f36597661a6d50047f0/grails-plugin-rest-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.2.9/2cff6d71e1ff86d673f2e1cea73cc9071da13bbe/grails-plugin-async-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.2.9/aac28ca6edabed9165eefe9594347c220347a76b/grails-web-databinding-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.2.9/13840bb79f795917a26154c4b10cacc5ac71ff72/grails-web-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/grails.factories" />
                 </list>
               </option>
               <option name="traits">
@@ -3121,26 +3021,26 @@
             <StateHolder>
               <option name="knownFactories">
                 <list>
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.2.9/8e0067133b1958b2c0fbbbc4b67f09d74a5ed7d5/grails-web-common-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.2.9/8c6c861877fee6aab43f37f5d2511a44d942322c/grails-plugin-codecs-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.2.9/2cff6d71e1ff86d673f2e1cea73cc9071da13bbe/grails-plugin-async-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.2.9/8b64092c399bb678bfb92c71387b75ce623f302a/grails-plugin-testing-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.2.9/aac28ca6edabed9165eefe9594347c220347a76b/grails-web-databinding-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.2.9/13840bb79f795917a26154c4b10cacc5ac71ff72/grails-web-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/services/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.2.9/2c0909b0b12f5204950b0df163c0a5f022929148/grails-plugin-controllers-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate5/6.0.10/e3376aaa0b568d1df73e7f2b0d39512b826566ba/hibernate5-6.0.10.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.2.9/fcf406ed0b7f38c3a4be3f36597661a6d50047f0/grails-plugin-rest-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.2.9/e384bac55499a63a9ac91e243fa1b1571b37f2f1/grails-plugin-interceptors-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.3/e857268f939b4b907ce91ff4f5217cfb97abcaa7/cache-3.0.3.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/services/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.2.9/8c6c861877fee6aab43f37f5d2511a44d942322c/grails-plugin-codecs-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate5/6.0.10/e3376aaa0b568d1df73e7f2b0d39512b826566ba/hibernate5-6.0.10.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.2.9/8e0067133b1958b2c0fbbbc4b67f09d74a5ed7d5/grails-web-common-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.2.9/2c0909b0b12f5204950b0df163c0a5f022929148/grails-plugin-controllers-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.2.9/e384bac55499a63a9ac91e243fa1b1571b37f2f1/grails-plugin-interceptors-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-taglib/3.2.9/38f75bbb282a6469c73dd4273e1b88f33cd27b8b/grails-web-taglib-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-gsp/3.2.9/325f3ecea17e77c853104f361dde95a1c9e709d3/grails-plugin-gsp-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.2.9/fcf406ed0b7f38c3a4be3f36597661a6d50047f0/grails-plugin-rest-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.2.9/2cff6d71e1ff86d673f2e1cea73cc9071da13bbe/grails-plugin-async-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.2.9/8b64092c399bb678bfb92c71387b75ce623f302a/grails-plugin-testing-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.2.9/aac28ca6edabed9165eefe9594347c220347a76b/grails-web-databinding-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.2.9/13840bb79f795917a26154c4b10cacc5ac71ff72/grails-web-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.2.9/6ea9a9c3cb73e6cece50f151ad84a34b64634fb5/grails-web-url-mappings-3.2.9.jar!/META-INF/grails.factories" />
                 </list>
               </option>
               <option name="traits">
@@ -3207,10 +3107,10 @@
               <option name="knownFactories">
                 <list>
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
                 </list>
               </option>
               <option name="traits">
@@ -3245,10 +3145,10 @@
               <option name="knownFactories">
                 <list>
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
                 </list>
               </option>
               <option name="traits">
@@ -3282,11 +3182,11 @@
             <StateHolder>
               <option name="knownFactories">
                 <list>
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.2.9/accbc5b4375673b7389edaeb53d6a8797e5f2a69/grails-plugin-domain-class-3.2.9.jar!/META-INF/grails.factories" />
-                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.2.9/6dadaddfa4e6dfb7e135f9116aabd0f3e2a08285/grails-core-3.2.9.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.2.9/7c1627b3de2d22fbc90e390a6b27ce92c22b2260/grails-plugin-services-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.2.9/b0e856c6418acd784f96a1099413fb2c7e6294d1/grails-validation-3.2.9.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/6.0.10.RELEASE/b2a987694908ddfe5a7606d901bb036d0edc6551/grails-datastore-gorm-support-6.0.10.RELEASE.jar!/META-INF/grails.factories" />
                   <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.2.9/8b64092c399bb678bfb92c71387b75ce623f302a/grails-plugin-testing-3.2.9.jar!/META-INF/grails.factories" />
                 </list>
               </option>
@@ -3330,6 +3230,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/codenarc.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CoreAndPluginWebApplication/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
@@ -3360,13 +3300,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1501469089104" expanded="true" signature="694:1371" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="1765:2012" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="1775:2006" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="2065:2212" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="2075:2206" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3374,7 +3308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3382,7 +3315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3398,7 +3330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3414,7 +3345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3422,7 +3352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3430,7 +3359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3448,13 +3376,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1501469089104" expanded="true" signature="694:1371" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="1765:2012" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="1775:2006" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="2065:2212" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="2075:2206" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3465,14 +3387,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../corePluginModel/wrapper/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../corePluginModel/wrapper/build.gradle" />
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -3543,13 +3458,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1501469089104" expanded="true" signature="694:1371" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="1765:2012" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="1775:2006" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="2065:2212" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="2075:2206" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3557,7 +3466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3580,7 +3488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3603,7 +3510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3611,7 +3517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3629,13 +3534,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1501469089104" expanded="true" signature="694:1371" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="1765:2012" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="1775:2006" ph="..." />
-            <marker date="1501469089104" expanded="true" signature="2065:2212" ph="{...}" />
-            <marker date="1501469089104" expanded="true" signature="2075:2206" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3654,14 +3553,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../corePluginModel/wrapper/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../corePluginModel/wrapper/build.gradle" />
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -3686,14 +3578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="78" column="52" lean-forward="false" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../CoreAndPluginWebApplication/webApp/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -3706,14 +3590,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>

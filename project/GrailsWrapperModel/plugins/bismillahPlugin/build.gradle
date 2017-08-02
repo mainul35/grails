@@ -1,7 +1,5 @@
-
-
 version "0.1"
-group "bismillahPlugin2"
+group "bismillahPlugin"
 
 grails {
     plugins {

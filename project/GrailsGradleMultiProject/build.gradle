@@ -9,7 +9,6 @@ buildscript {
             url "http://central.maven.org/maven2/"
         }
     }
-
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
