@@ -9,7 +9,7 @@ class ReadMarkdownController {
     def index() {
 
         Parser parser = Parser.builder().build()
-        Node document = parser.parse("This is *Sparta*")
+        Node document = parser.parse("This is **Sparta**")
         HtmlRenderer renderer = HtmlRenderer.builder().build()
         render(renderer.render(document))
 
