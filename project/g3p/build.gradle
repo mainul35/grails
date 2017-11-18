@@ -25,17 +25,26 @@ repositories {
     maven { url "https://repo.grails.org/grails/core" }
 }
 
-//grails {
-//    plugins {
-//        compile project(':appPlugin/bismillahPlugin')
-//    }
-//}
+grails {
+    plugins {
+//        compile project(':appPlugin/bismillahPlugin2')
+        compile project(':core/app')
+        compile project(':appPlugin/bismillahPlugin')
+    }
+}
+
+
+
 
 dependencies {
+
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"
-    compile files('glib/bismillahPlugin-0.1.jar')
+//    compile files('glib/bismillahPlugin-0.1.jar')
     compile "org.springframework.boot:spring-boot-starter-actuator"
     compile "org.springframework.boot:spring-boot-starter-tomcat"
     compile "org.grails:grails-web-boot"

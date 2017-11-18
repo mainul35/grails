@@ -1,0 +1,3 @@
+include 'webApp'
+include 'coreApp'
+include 'plugins/blog'

@@ -1,0 +1,17 @@
+<plugin name='grailsPlugin' version='unspecified' grailsVersion='3.2.9 &gt; *'>
+  <type>plugin.GrailsPlugin</type>
+  <grailsVersion>3.2.9 &gt; *</grailsVersion>
+  <authorEmail></authorEmail>
+  <pluginExcludes>[grails-app/views/error.gsp]</pluginExcludes>
+  <author>Your name</author>
+  <documentation>http://grails.org/plugin/</documentation>
+  <name></name>
+  <description>Brief summary/description of the plugin.
+</description>
+  <title></title>
+  <version />
+  <resources>
+    <resource>plugin.Application</resource>
+    <resource>demo.RandomPersonService</resource>
+  </resources>
+</plugin>

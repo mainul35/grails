@@ -24,7 +24,16 @@ repositories {
     maven { url "https://repo.grails.org/grails/core" }
 }
 
+
+grails {
+    plugins {
+        compile project(':core/app')
+    }
+}
+
 dependencies {
+    compile fileTree(dir: 'app-lib', include: '*.jar')
+
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"

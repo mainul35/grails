@@ -1,0 +1,21 @@
+<plugin name='bismillahPlugin2' version='0.1' grailsVersion='3.3.0.RC1 &gt; *'>
+  <type>bismillahplugin2.BismillahPlugin2GrailsPlugin</type>
+  <grailsVersion>3.3.0.RC1 &gt; *</grailsVersion>
+  <authorEmail></authorEmail>
+  <pluginExcludes>[grails-app/views/error.gsp]</pluginExcludes>
+  <author>Your name</author>
+  <documentation>http://grails.org/plugin/bismillah-plugin2</documentation>
+  <profiles>[web]</profiles>
+  <name>bismillah-plugin2</name>
+  <description>Brief summary/description of the plugin.
+</description>
+  <title>Bismillah Plugin2</title>
+  <version />
+  <resources>
+    <resource>bismillahplugin2.Plugin2ResourceController</resource>
+    <resource>bismillahplugin2.PluginTestingController</resource>
+    <resource>bismillahplugin2.UrlMappings</resource>
+    <resource>bismillahplugin2.Application</resource>
+    <resource>bismillahplugin2.BootStrap</resource>
+  </resources>
+</plugin>

@@ -1,0 +1,4 @@
+rootProject.name='CoreAndPluginWebApplication'
+include 'webApp'
+include 'core'
+

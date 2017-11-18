@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coreApp/coreApp.iml" filepath="$PROJECT_DIR$/.idea/modules/coreApp/coreApp.iml" group="coreApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coreApp/coreApp_ast.iml" filepath="$PROJECT_DIR$/.idea/modules/coreApp/coreApp_ast.iml" group="coreApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coreApp/coreApp_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/coreApp/coreApp_integrationTest.iml" group="coreApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coreApp/coreApp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/coreApp/coreApp_main.iml" group="coreApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/coreApp/coreApp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/coreApp/coreApp_test.iml" group="coreApp" />
+      <module fileurl="file://$PROJECT_DIR$/multiModel.iml" filepath="$PROJECT_DIR$/multiModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog.iml" group="plugins/blog" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_ast.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_ast.iml" group="plugins/blog" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_integrationTest.iml" group="plugins/blog" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_main.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_main.iml" group="plugins/blog" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_test.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/blog/plugins_blog_test.iml" group="plugins/blog" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webApp/webApp.iml" filepath="$PROJECT_DIR$/.idea/modules/webApp/webApp.iml" group="webApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webApp/webApp_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/webApp/webApp_integrationTest.iml" group="webApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webApp/webApp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webApp/webApp_main.iml" group="webApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webApp/webApp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webApp/webApp_test.iml" group="webApp" />
+    </modules>
+  </component>
+</project>

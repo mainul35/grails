@@ -1,0 +1,9 @@
+task pluginBuild(type: GradleBuild){
+    File file = file("$buildDir/pluginList")
+    if (file.exists()){
+        file.readLines().each{
+            buildFile = "plugins/$it/build.gradle"
+            tasks = ['assemble']
+        }
+    }
+}

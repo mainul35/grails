@@ -1,0 +1,5 @@
+rootProject.name = 'GrailsGradleMultiProject'
+include 'starter'
+include 'coreApp'
+include 'plugins/bismillahPlugin'
+include 'plugins/bismillahPlugin2'

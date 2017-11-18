@@ -1,0 +1,61 @@
+def LIBS = "libs"
+def MAIN = "src/main"
+def WEB_APP = MAIN + "/webapp"
+def WEB_INF = WEB_APP + "/WEB-INF"
+def BUILD_DIR = "build"
+def BUILD_LIB = BUILD_DIR + "/libs"
+def BUILD_ZIP = BUILD_LIB + "/build_zip"
+
+
+task cleanAll(type: Delete) {
+    delete BUILD_ZIP, BUILD_DIR + "/plugin.zip"
+    followSymlinks = true
+}
+
+
+task copyAllContent(){
+    doLast{
+        copy{
+            from LIBS
+            into BUILD_ZIP + "/libs"
+        }
+
+        copy{
+            from WEB_INF
+            into BUILD_ZIP + "/WEB-INF"
+        }
+
+        copy{
+            from WEB_APP
+            exclude "WEB-INF"
+            into BUILD_ZIP + "/public"
+        }
+    }
+}
+
+task archiveBinary(type: Zip) {
+    from BUILD_ZIP
+    archiveName 'plugin.zip'
+    destinationDir(file(BUILD_DIR))
+}
+
+task distributionPacking() {
+    doFirst{
+        println project.name
+        println name
+        println projectDir
+        tasks.cleanAll.execute()
+        tasks.copyAllContent.execute()
+        tasks.archiveBinary.execute()
+    }
+}
+
+
+
+
+
+
+
+
+
+
