@@ -1,7 +1,13 @@
 buildscript {
     repositories {
         mavenLocal()
-        maven { url "https://repo.grails.org/grails/core" }
+        jcenter()
+        maven {
+            url "https://repo.grails.org/grails/core"
+        }
+        maven {
+            url "http://central.maven.org/maven2/"
+        }
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
@@ -22,10 +28,17 @@ apply plugin:"org.grails.grails-gsp"
 
 repositories {
     mavenLocal()
-    maven { url "https://repo.grails.org/grails/core" }
+    jcenter()
+    maven {
+        url "https://repo.grails.org/grails/core"
+    }
+    maven {
+        url "http://central.maven.org/maven2/"
+    }
 }
 
 dependencies {
+
     compile group: 'com.atlassian.commonmark', name: 'commonmark', version: '0.10.0'
 
     compile "org.springframework.boot:spring-boot-starter-logging"
