@@ -6,7 +6,9 @@ class AppConfiguration extends DomainAbstraction{
 
     Integer id
     String accessKey
+    String secretKey
 
     static constraints = {
+        secretKey(nullable: true)
     }
 }
