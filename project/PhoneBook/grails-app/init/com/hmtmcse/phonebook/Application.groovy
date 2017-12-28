@@ -1,4 +1,4 @@
-package phonebook
+package com.hmtmcse.phonebook
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration
