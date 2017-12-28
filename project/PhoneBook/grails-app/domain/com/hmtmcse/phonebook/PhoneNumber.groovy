@@ -6,6 +6,9 @@ class PhoneNumber {
     String number
     String type
 
+    Date created
+    Date updated
+
     static hasMany = [personGroup: PersonGroup]
 
     static constraints = {

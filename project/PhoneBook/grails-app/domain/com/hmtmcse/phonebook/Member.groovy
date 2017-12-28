@@ -9,6 +9,9 @@ class Member {
     String email
     String password
 
+    Date created
+    Date updated
+
     static hasMany = [person: Person]
 
     static constraints = {

@@ -7,6 +7,9 @@ class Person {
     String image
     Member member
 
+    Date created
+    Date updated
+
 
     static hasMany = [phoneNumber: PhoneNumber]
 
