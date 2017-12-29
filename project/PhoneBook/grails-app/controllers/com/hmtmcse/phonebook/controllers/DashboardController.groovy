@@ -2,5 +2,11 @@ package com.hmtmcse.phonebook.controllers
 
 class DashboardController {
 
-    def index() { }
+    def index() {
+
+    }
+
+    def create() {
+
+    }
 }
