@@ -4,7 +4,6 @@ class PersonGroup {
 
     Integer id
     String name
-    String type
 
     Date created
     Date updated
