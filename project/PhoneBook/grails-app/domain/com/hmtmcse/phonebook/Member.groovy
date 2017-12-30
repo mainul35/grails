@@ -1,8 +1,6 @@
 package com.hmtmcse.phonebook
 
 class Member {
-
-
     Integer id
     String firstName
     String lastName
@@ -12,8 +10,13 @@ class Member {
     Date created
     Date updated
 
-    static hasMany = [person: Person]
-
     static constraints = {
+        email(email: true, nullable: false, unique: true)
     }
+
+    static mapping = {
+        table("user")
+        version(false)
+    }
+    static hasMany = [person: Person]
 }
