@@ -7,16 +7,19 @@ class Member {
     String email
     String password
 
-    Date created
-    Date updated
+    Date dateCreated
+    Date lastUpdated
 
     static constraints = {
-        email(email: true, nullable: false, unique: true)
+        email(email: true, nullable: false, unique: true, blank: false)
+        password(blank: false)
+        firstName(blank: false)
+        lastName(nullable: true, blank: true)
     }
 
     static mapping = {
-        table("user")
         version(false)
     }
+
     static hasMany = [person: Person]
 }

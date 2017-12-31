@@ -5,8 +5,8 @@ class PersonGroup {
     Integer id
     String name
 
-    Date created
-    Date updated
+    Date dateCreated
+    Date lastUpdated
 
     static belongsTo = PhoneNumber
     static hasMany = [phoneNumber: PhoneNumber]

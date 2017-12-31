@@ -6,8 +6,8 @@ class PhoneNumber {
     String number
     String type
 
-    Date created
-    Date updated
+    Date dateCreated
+    Date lastUpdated
 
     static hasMany = [personGroup: PersonGroup]
 

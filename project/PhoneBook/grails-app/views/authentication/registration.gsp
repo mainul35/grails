@@ -2,27 +2,31 @@
 
 <div class="card">
     <div class="card-header">
-        Update Content
-        <span class="float-right">
-            <div class="btn-group">
-                <a href="#" class="btn btn-success">Create</a>
-                <a href="#" class="btn btn-primary">Reload</a>
-            </div>
-        </span>
+        Member Registration
     </div>
     <div class="card-body">
-        <table class="table table-dark">
-            <thead>
-            <tr>
-                <th scope="col">Commit</th>
-                <th scope="col">Commit Hash</th>
-                <th scope="col">Files</th>
-                <th scope="col">Date</th>
-                <th scope="col">Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <g:form controller="authentication" action="doRegistration">
+            <div class="form-group">
+                <label>First Name *</label>
+                <g:textField name="firstName" class="form-control" placeholder="Please Enter First Name"/>
+                <UIHelper:renderErrorMessage fieldName="firstName" model="${member}" errorMessage="please.enter.first.name"/>
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <g:textField name="lastName" class="form-control" placeholder="Please Last Name"/>
+                <UIHelper:renderErrorMessage fieldName="lastName" model="${member}"/>
+            </div>
+            <div class="form-group">
+                <label>Email address *</label>
+                <g:textField name="email" class="form-control" placeholder="Please Enter Email"/>
+                <UIHelper:renderErrorMessage fieldName="email" model="${member}"/>
+            </div>
+            <div class="form-group">
+                <label>Password *</label>
+                <g:passwordField name="password" class="form-control" placeholder="Please Enter Password"/>
+                <UIHelper:renderErrorMessage fieldName="password" model="${member}"/>
+            </div>
+            <g:submitButton name="registration" value="Registration" class="btn btn-primary"/>
+        </g:form>
     </div>
 </div>

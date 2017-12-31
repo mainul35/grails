@@ -6,7 +6,7 @@
                 <div class="col-sm-6 col-md-4 mx-auto">
                     <h1 class="text-center login-title">Phone Book Member Login</h1>
                     <div class="account-wall">
-                        <g:img dir="images" file="logo.png" class="profile-img"/>
+                        <g:img dir="images" file="grails.svg" class="profile-img"/>
                         <g:form controller="authentication" action="doLogin" class="form-signin">
                             <g:textField name="email" class="form-control" placeholder="Email" required="required" />
                             <g:passwordField name="password" class="form-control" placeholder="Password" required="required" />
