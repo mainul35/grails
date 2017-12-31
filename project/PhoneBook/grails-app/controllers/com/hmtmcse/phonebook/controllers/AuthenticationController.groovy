@@ -6,28 +6,42 @@ class AuthenticationController {
 
     MemberService memberService
 
-    def index() {}
+    def index() {
+        redirect(controller: "dashboard", action: "index")
+    }
 
-    def login() {}
+
+    def login() {
+        if (memberService.isAuthenticated()) {
+            redirect(controller: "dashboard", action: "index")
+        }
+    }
+
+
+    def logout() {
+        session.invalidate()
+        redirect(controller: "authentication", action: "login")
+    }
 
     def registration() {
         [member: flash.redirectParams]
     }
 
+
     def doLogin() {
-        if (memberService.doLogin(params.email, params.password)){
+        if (memberService.doLogin(params.email, params.password)) {
             redirect(controller: "dashboard", action: "index")
-        }else{
+        } else {
             redirect(controller: "authentication", action: "login")
         }
     }
 
     def doRegistration() {
         def response = memberService.registerMember(params)
-        if (response.isSuccess){
+        if (response.isSuccess) {
             memberService.setMemberAuthorization(response.model)
             redirect(controller: "dashboard", action: "index")
-        }else{
+        } else {
             flash.redirectParams = response.model
             redirect(controller: "authentication", action: "registration")
         }

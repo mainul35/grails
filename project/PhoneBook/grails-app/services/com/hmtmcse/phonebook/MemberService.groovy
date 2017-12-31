@@ -39,4 +39,10 @@ class MemberService {
         return false
     }
 
+    def getMemberName(){
+        def authorization = AppUtil.getAppSession()[AUTHORIZED]
+        def member = authorization?.member
+        return "${member.firstName} ${member.lastName}"
+    }
+
 }

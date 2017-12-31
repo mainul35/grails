@@ -17,9 +17,4 @@ class SecurityInterceptor {
         return true
     }
 
-    boolean after() { true }
-
-    void afterView() {
-
-    }
 }
