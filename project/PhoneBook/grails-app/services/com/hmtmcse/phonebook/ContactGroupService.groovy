@@ -5,6 +5,8 @@ import grails.web.servlet.mvc.GrailsParameterMap
 
 class ContactGroupService {
 
+    GlobalConfigService globalConfigService
+
     def save(GrailsParameterMap params) {
         ContactGroup contactGroup = new ContactGroup(params)
         def response = AppUtil.saveResponse(false, contactGroup)
@@ -24,8 +26,16 @@ class ContactGroupService {
     }
 
     def list(GrailsParameterMap params) {
-        List<ContactGroup> contactGroupList = ContactGroup.list()
-        return contactGroupList
+        params.max = params.max?:globalConfigService.itemsPerPage()
+        List<ContactGroup> contactGroupList = ContactGroup.createCriteria().list(params) {
+            if (params?.colName && params?.colValue){
+                like(params.colName, "%" +  params.colValue + "%")
+            }
+            if (!params.sort){
+                order("id","desc")
+            }
+        }
+        return [list:contactGroupList, count:ContactGroup.count()]
     }
 
 }

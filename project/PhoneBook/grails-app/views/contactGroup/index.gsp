@@ -15,17 +15,24 @@
             <thead class="thead-dark">
             <tr>
                 <g:sortableColumn property="name" title="${g.message(code: "name")}"/>
-                <th><g:message code="action"/></th>
+                <th class="action-row"><g:message code="action"/></th>
             </tr>
             </thead>
             <tbody>
                 <g:each in="${contactGroups}" var="group">
                     <tr>
                         <td>${group?.name}</td>
-                        <td>Action</td>
+                        <td>
+                            <div class="btn-group">
+                                <g:link controller="contactGroup" action="edit" class="btn btn-primary"><i class="fa fa-angle-double-down fa-lg"></i></g:link>
+                            </div>
+                        </td>
                     </tr>
                 </g:each>
             </tbody>
         </table>
+        <div class="paginate">
+            <g:paginate total="${total ?: 0}" />
+        </div>
     </div>
 </div>

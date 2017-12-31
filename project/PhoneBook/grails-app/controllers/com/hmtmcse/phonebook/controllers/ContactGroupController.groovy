@@ -12,7 +12,8 @@ class ContactGroupController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index() {
-        [contactGroups: contactGroupService.list(params)]
+        def response = contactGroupService.list(params)
+        [contactGroups: response.list, total:response.count]
     }
 
     def show(Integer id) {
