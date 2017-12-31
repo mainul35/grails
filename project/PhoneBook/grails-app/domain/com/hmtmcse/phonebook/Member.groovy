@@ -22,4 +22,16 @@ class Member {
     }
 
     static hasMany = [person: Person]
+
+
+    def beforeInsert = {
+        this.password = this.password.encodeAsMD5()
+    }
+
+
+    def beforeUpdate = {
+        this.password = this.password.encodeAsMD5()
+    }
+
+
 }

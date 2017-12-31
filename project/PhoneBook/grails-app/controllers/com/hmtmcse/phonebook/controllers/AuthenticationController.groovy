@@ -1,28 +1,35 @@
 package com.hmtmcse.phonebook.controllers
 
-import com.hmtmcse.phonebook.Member
+import com.hmtmcse.phonebook.MemberService
 
 class AuthenticationController {
 
-    def index() { }
+    MemberService memberService
 
-    def login() { }
+    def index() {}
+
+    def login() {}
 
     def registration() {
-        [member:flash.redirectParams]
+        [member: flash.redirectParams]
     }
 
     def doLogin() {
-        redirect(controller:"authentication", action:"index")
+        if (memberService.doLogin(params.email, params.password)){
+            redirect(controller: "dashboard", action: "index")
+        }else{
+            redirect(controller: "authentication", action: "login")
+        }
     }
 
     def doRegistration() {
-        Member member = new Member(params)
-        if (member.validate()){
-
-        } else{
-            flash.redirectParams = member
-            redirect(controller:"authentication", action:"registration")
+        def response = memberService.registerMember(params)
+        if (response.isSuccess){
+            memberService.setMemberAuthorization(response.model)
+            redirect(controller: "dashboard", action: "index")
+        }else{
+            flash.redirectParams = response.model
+            redirect(controller: "authentication", action: "registration")
         }
     }
 }
