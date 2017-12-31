@@ -13,4 +13,8 @@ class ContactNumber {
 
     static constraints = {
     }
+
+    static mapping = {
+        version(false)
+    }
 }

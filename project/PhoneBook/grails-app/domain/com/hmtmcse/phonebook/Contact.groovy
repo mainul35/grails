@@ -16,4 +16,8 @@ class Contact {
 
     static constraints = {
     }
+
+    static mapping = {
+        version(false)
+    }
 }

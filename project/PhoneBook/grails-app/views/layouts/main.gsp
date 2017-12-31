@@ -32,7 +32,6 @@
     <div class="row">
         <g:render template="/layouts/navigation"/>
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
-            <h1>Dashboard</h1>
             <g:layoutBody/>
         </main>
     </div>

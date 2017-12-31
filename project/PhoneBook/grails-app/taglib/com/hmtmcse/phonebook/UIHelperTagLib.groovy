@@ -32,7 +32,7 @@ class UIHelperTagLib {
                 [controller: "contactGroup", action: "index", name: "contact.group"],
         ].each { menu ->
             out << '<li class="list-group-item">'
-            out << g.link(controller: menu.controller, action: menu.action) { g.message(code: menu.name) }
+            out << g.link(controller: menu.controller, action: menu.action) { g.message(code: menu.name, args: ['']) }
             out << '</li>'
         }
     }
