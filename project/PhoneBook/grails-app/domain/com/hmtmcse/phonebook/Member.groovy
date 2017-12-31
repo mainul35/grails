@@ -23,7 +23,7 @@ class Member {
         version(false)
     }
 
-    static hasMany = [person: Person]
+    static hasMany = [contact: Contact]
 
 
     def beforeInsert = {

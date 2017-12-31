@@ -20,9 +20,21 @@ class UIHelperTagLib {
         out << '<li class="nav-item dropdown show">'
         out << g.link(class:"nav-link dropdown-toggle", "data-toggle":"dropdown"){memberService.getMemberName()}
         out << '<div class="dropdown-menu">'
+        out << g.link(controller: "authentication", action: "changePassword", class: "dropdown-item"){g.message(code:"change.password")}
         out << g.link(controller: "authentication", action: "logout", class: "dropdown-item"){g.message(code:"logout")}
         out << "</div></li>"
+    }
 
+    def appMenu = { attrs, body ->
+        [
+                [controller: "dashboard", action: "index", name: "dashboard"],
+                [controller: "dashboard", action: "index", name: "contact"],
+                [controller: "contactGroup", action: "index", name: "contact.group"],
+        ].each { menu ->
+            out << '<li class="list-group-item">'
+            out << g.link(controller: menu.controller, action: menu.action) { g.message(code: menu.name) }
+            out << '</li>'
+        }
     }
 
 }

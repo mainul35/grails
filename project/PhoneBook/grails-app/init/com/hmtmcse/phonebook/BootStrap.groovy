@@ -10,7 +10,7 @@ class BootStrap {
                 ["name": "Office"],
                 ["name": "Other"],
         ].each { name ->
-            new PersonGroup(name: name).save(flush: true)
+            new ContactGroup(name: name).save(flush: true)
         }
 
 

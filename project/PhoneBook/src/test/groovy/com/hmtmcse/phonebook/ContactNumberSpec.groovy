@@ -3,7 +3,7 @@ package com.hmtmcse.phonebook
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class PhoneNumberSpec extends Specification implements DomainUnitTest<PhoneNumber> {
+class ContactNumberSpec extends Specification implements DomainUnitTest<ContactNumber> {
 
     def setup() {
     }

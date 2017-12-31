@@ -1,15 +1,18 @@
 package com.hmtmcse.phonebook
 
-class PhoneNumber {
+class Contact {
 
     Integer id
-    String number
-    String type
+    String name
+    String image
+    Member member
 
     Date dateCreated
     Date lastUpdated
 
-    static hasMany = [personGroup: PersonGroup]
+
+    static hasMany = [contactNumber: ContactNumber]
+
 
     static constraints = {
     }

@@ -1,6 +1,6 @@
 package com.hmtmcse.phonebook
 
-class PersonGroup {
+class ContactGroup {
 
     Integer id
     String name
@@ -8,8 +8,8 @@ class PersonGroup {
     Date dateCreated
     Date lastUpdated
 
-    static belongsTo = PhoneNumber
-    static hasMany = [phoneNumber: PhoneNumber]
+    static belongsTo = ContactNumber
+    static hasMany = [contactNumber: ContactNumber]
 
     static constraints = {
     }

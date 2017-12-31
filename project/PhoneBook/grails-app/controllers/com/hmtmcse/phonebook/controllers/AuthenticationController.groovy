@@ -17,6 +17,19 @@ class AuthenticationController {
         }
     }
 
+    def changePassword() {
+        if (memberService.isAuthenticated()) {
+            redirect(controller: "dashboard", action: "index")
+        }
+    }
+
+
+    def forgotPassword() {
+        if (memberService.isAuthenticated()) {
+            redirect(controller: "dashboard", action: "index")
+        }
+    }
+
 
     def logout() {
         session.invalidate()
