@@ -6,6 +6,7 @@ class Member {
     String lastName
     String email
     String password
+    String identityHash
 
     Date dateCreated
     Date lastUpdated
@@ -15,6 +16,7 @@ class Member {
         password(blank: false)
         firstName(blank: false)
         lastName(nullable: true, blank: true)
+        identityHash(nullable: true, blank: true)
     }
 
     static mapping = {
