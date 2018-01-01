@@ -28,7 +28,7 @@ class UIHelperTagLib {
     def appMenu = { attrs, body ->
         [
                 [controller: "dashboard", action: "index", name: "dashboard"],
-                [controller: "dashboard", action: "index", name: "contact"],
+                [controller: "contact", action: "index", name: "contact"],
                 [controller: "contactGroup", action: "index", name: "contact.group"],
         ].each { menu ->
             out << '<li class="list-group-item">'

@@ -49,4 +49,8 @@ class MemberService {
         return "${member.firstName} ${member.lastName}"
     }
 
+    def getCurrentMember(){
+        return getMember()
+    }
+
 }

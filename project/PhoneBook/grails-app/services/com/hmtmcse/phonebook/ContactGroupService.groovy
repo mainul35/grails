@@ -1,6 +1,5 @@
 package com.hmtmcse.phonebook
 
-import com.hmtmcse.phonebook.controllers.ContactGroupController
 import grails.web.servlet.mvc.GrailsParameterMap
 
 

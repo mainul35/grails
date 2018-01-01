@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="834e6fc8-ccac-4bac-b765-422139a71ecd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/javascripts/gt.init.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/javascripts/gt.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/javascripts/gt.message.box.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/javascripts/jquery-confirm.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/stylesheets/jquery-confirm.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/controllers/com/hmtmcse/phonebook/controllers/ContactController.groovy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/services/com/hmtmcse/phonebook/ContactService.groovy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contact/_form.gsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contact/create.gsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contact/edit.gsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contact/index.gsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contact/show.gsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/javascripts/application.js" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/assets/stylesheets/application.css" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/controllers/com/hmtmcse/phonebook/controllers/ContactGroupController.groovy" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/controllers/com/hmtmcse/phonebook/controllers/ContactGroupController.groovy" />
+      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/domain/com/hmtmcse/phonebook/Contact.groovy" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/domain/com/hmtmcse/phonebook/Contact.groovy" />
       <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/i18n/messages.properties" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/i18n/messages.properties" />
       <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/services/com/hmtmcse/phonebook/ContactGroupService.groovy" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/services/com/hmtmcse/phonebook/ContactGroupService.groovy" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contactGroup/edit.gsp" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contactGroup/edit.gsp" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contactGroup/index.gsp" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contactGroup/index.gsp" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contactGroup/show.gsp" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/contactGroup/show.gsp" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/layouts/main.gsp" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/views/layouts/public.gsp" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/views/layouts/public.gsp" />
-      <change beforePath="$PROJECT_DIR$/../PhoneBook/src/main/groovy/com.hmtmcse.phonebook/AppUtil.groovy" afterPath="$PROJECT_DIR$/../PhoneBook/src/main/groovy/com.hmtmcse.phonebook/AppUtil.groovy" />
+      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/services/com/hmtmcse/phonebook/MemberService.groovy" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/services/com/hmtmcse/phonebook/MemberService.groovy" />
+      <change beforePath="$PROJECT_DIR$/../PhoneBook/grails-app/taglib/com/hmtmcse/phonebook/UIHelperTagLib.groovy" afterPath="$PROJECT_DIR$/../PhoneBook/grails-app/taglib/com/hmtmcse/phonebook/UIHelperTagLib.groovy" />
     </list>
     <ignored path="GrailsBismillah.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +49,8 @@
       <file leaf-file-name="StudentController.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/hmtmcse/StudentController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="527">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -750,12 +746,12 @@
       <workItem from="1483873976093" duration="19000" />
       <workItem from="1514645157886" duration="40000" />
       <workItem from="1514720850674" duration="1912000" />
-      <workItem from="1514772540735" duration="2903000" />
+      <workItem from="1514772540735" duration="2914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18853000" />
+    <option name="totallyTimeSpent" value="18864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1035" extended-state="0" />
@@ -1192,8 +1188,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/hmtmcse/StudentController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
