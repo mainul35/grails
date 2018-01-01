@@ -10,7 +10,6 @@ class ContactNumber {
     Date dateCreated
     Date lastUpdated
 
-    static hasMany = [contactGroup: ContactGroup]
 
     static constraints = {
     }

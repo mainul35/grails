@@ -44,6 +44,10 @@ class ContactGroupService {
         return [list:contactGroupList, count:ContactGroup.count()]
     }
 
+    def getGroupList(){
+        return ContactGroup.list()
+    }
+
     def delete(ContactGroup contactGroup) {
         try {
             contactGroup.delete(flush: true)

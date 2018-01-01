@@ -6,6 +6,7 @@ class UIHelperTagLib {
     static namespace = "UIHelper"
 
     MemberService memberService
+    ContactGroupService contactGroupService
 
     def renderErrorMessage = { attrs, body ->
         def model = attrs.model
@@ -45,6 +46,11 @@ class UIHelperTagLib {
         select.PERSONAL = "Personal"
         select.OTHER = "Other"
         out << g.select(from: select, name: name, optionKey: "key", optionValue: "value", value: value, class:"form-control")
+    }
+
+    def contactGroup = { attrs, body ->
+        String name = attrs.name ?: "contactGroup"
+        out << g.select(class:"form-control", multiple: "multiple", optionValue: "name", optionKey: "id", value: attrs.value, name: name, from: contactGroupService.getGroupList())
     }
 
 }

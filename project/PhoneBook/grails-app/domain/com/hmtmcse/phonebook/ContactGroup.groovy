@@ -8,8 +8,8 @@ class ContactGroup {
     Date dateCreated
     Date lastUpdated
 
-    static belongsTo = ContactNumber
-    static hasMany = [contactNumber: ContactNumber]
+    static belongsTo = Contact
+    static hasMany = [contact: Contact]
 
     static constraints = {
         name(blank: false, nullable: false)
