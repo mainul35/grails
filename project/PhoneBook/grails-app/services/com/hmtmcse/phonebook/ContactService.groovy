@@ -7,6 +7,7 @@ class ContactService {
 
     GlobalConfigService globalConfigService
     MemberService memberService
+    PhoneBookService phoneBookService
 
     def save(GrailsParameterMap params) {
         Contact contact = new Contact(params)
@@ -14,7 +15,10 @@ class ContactService {
         def response = AppUtil.saveResponse(false, contact)
         if (contact.validate()) {
             response.isSuccess = true
-            contact.save()
+            contact.save(flush: true)
+            if (params.number) {
+                phoneBookService.saveContactNumber(contact, params.type, params.number)
+            }
         }
         return response
     }
@@ -24,7 +28,7 @@ class ContactService {
         def response = AppUtil.saveResponse(false, contact)
         if (contact.validate()) {
             response.isSuccess = true
-            contact.save(flush:true)
+            contact.save(flush: true)
         }
         return response
     }
@@ -49,7 +53,7 @@ class ContactService {
     def delete(Contact contact) {
         try {
             contact.delete(flush: true)
-        }catch (Exception e){
+        } catch (Exception e) {
             println(e.getMessage())
             return false
         }
