@@ -9,7 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <asset:stylesheet src="application.css"/>
+    <asset:javascript src="application.js"/>
 
+    <script type="text/javascript">
+        GT.baseURL = "${session.getServletContext().getContextPath()}/";
+        <g:if test="${flash?.message && flash?.message?.info}">
+        jQuery(document).ready(function () {
+            GT.messageBox.showMessage(Boolean(${flash.message?.success}), "${flash.message?.info}");
+        });
+        </g:if>
+    </script>
     <g:layoutHead/>
 </head>
 
@@ -36,7 +45,5 @@
         </main>
     </div>
 </div>
-
-<asset:javascript src="application.js"/>
 </body>
 </html>

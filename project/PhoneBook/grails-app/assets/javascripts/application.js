@@ -8,15 +8,10 @@
 //= require jquery-3.2.1.slim.min
 //= require bootstrap
 //= require popper.min
+//= require jquery-confirm.min
+//= require gt
+//= require gt.init
+//= require gt.message.box
 //= require_tree .
 //= require_self
 
-if (typeof jQuery !== 'undefined') {
-    (function($) {
-        $(document).ajaxStart(function() {
-            $('#spinner').fadeIn();
-        }).ajaxStop(function() {
-            $('#spinner').fadeOut();
-        });
-    })(jQuery);
-}

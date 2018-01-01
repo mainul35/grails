@@ -5,6 +5,7 @@
     </div>
     <div class="card-body">
         <g:form controller="contactGroup" action="update">
+            <g:hiddenField name="id" value="${contactGroup.id}"/>
             <g:render template="form"/>
             <div class="form-action-panel">
                 <g:submitButton class="btn btn-primary" name="login" value="${g.message(code: "update")}"/>

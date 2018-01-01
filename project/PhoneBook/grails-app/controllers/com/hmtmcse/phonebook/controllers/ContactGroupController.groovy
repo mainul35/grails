@@ -1,15 +1,11 @@
 package com.hmtmcse.phonebook.controllers
 
-import com.hmtmcse.phonebook.ContactGroup
+import com.hmtmcse.phonebook.AppUtil
 import com.hmtmcse.phonebook.ContactGroupService
-import grails.validation.ValidationException
-import static org.springframework.http.HttpStatus.*
 
 class ContactGroupController {
 
     ContactGroupService contactGroupService
-
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index() {
         def response = contactGroupService.list(params)
@@ -17,7 +13,12 @@ class ContactGroupController {
     }
 
     def show(Integer id) {
-        [contactGroup:contactGroupService.get(id)]
+        def response = contactGroupService.get(id)
+        if (!response){
+            redirect(controller: "contactGroup", action: "index")
+        }else{
+            [contactGroup: response]
+        }
     }
 
     def create() {
@@ -27,63 +28,61 @@ class ContactGroupController {
     def save() {
         def response = contactGroupService.save(params)
         if (response.isSuccess) {
+            flash.message = AppUtil.infoMessage(g.message(code: "saved"))
             redirect(controller: "contactGroup", action: "index")
         } else {
             flash.redirectParams = response.model
+            flash.message = AppUtil.infoMessage(g.message(code: "unable.to.save"), false)
             redirect(controller: "contactGroup", action: "create")
         }
     }
 
-    def edit(Long id) {
-        respond contactGroupService.get(id)
-    }
-
-    def update(ContactGroup contactGroup) {
-        if (contactGroup == null) {
-            notFound()
-            return
-        }
-
-        try {
-            contactGroupService.save(contactGroup)
-        } catch (ValidationException e) {
-            respond contactGroup.errors, view:'edit'
-            return
-        }
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'contactGroup.label', default: 'ContactGroup'), contactGroup.id])
-                redirect contactGroup
+    def edit(Integer id) {
+        if (flash.redirectParams) {
+            [contactGroup: flash.redirectParams]
+        } else {
+            def response = contactGroupService.get(id)
+            if (!response) {
+                flash.message = AppUtil.infoMessage(g.message(code: "invalid.entity"), false)
+                redirect(controller: "contactGroup", action: "index")
+            } else {
+                [contactGroup: response]
             }
-            '*'{ respond contactGroup, [status: OK] }
         }
     }
 
-    def delete(Long id) {
-        if (id == null) {
-            notFound()
-            return
-        }
-
-        contactGroupService.delete(id)
-
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'contactGroup.label', default: 'ContactGroup'), id])
-                redirect action:"index", method:"GET"
+    def update() {
+        def response = contactGroupService.get(params.id)
+        if (!response){
+            flash.message = AppUtil.infoMessage(g.message(code: "invalid.entity"), false)
+            redirect(controller: "contactGroup", action: "index")
+        }else{
+            response = contactGroupService.update(response, params)
+            if (!response.isSuccess){
+                flash.redirectParams = response.model
+                flash.message = AppUtil.infoMessage(g.message(code: "unable.to.update"), false)
+                redirect(controller: "contactGroup", action: "edit")
+            }else{
+                flash.message = AppUtil.infoMessage(g.message(code: "updated"))
+                redirect(controller: "contactGroup", action: "index")
             }
-            '*'{ render status: NO_CONTENT }
         }
     }
 
-    protected void notFound() {
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'contactGroup.label', default: 'ContactGroup'), params.id])
-                redirect action: "index", method: "GET"
+    def delete(Integer id) {
+        def response = contactGroupService.get(id)
+        if (!response){
+            flash.message = AppUtil.infoMessage(g.message(code: "invalid.entity"), false)
+            redirect(controller: "contactGroup", action: "index")
+        }else{
+            response = contactGroupService.delete(response)
+            if (!response){
+                flash.message = AppUtil.infoMessage(g.message(code: "unable.to.delete"), false)
+            }else{
+                flash.message = AppUtil.infoMessage(g.message(code: "deleted"))
             }
-            '*'{ render status: NOT_FOUND }
+            redirect(controller: "contactGroup", action: "index")
         }
     }
+
 }

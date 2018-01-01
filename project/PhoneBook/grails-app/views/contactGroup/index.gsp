@@ -24,7 +24,9 @@
                         <td>${group?.name}</td>
                         <td>
                             <div class="btn-group">
-                                <g:link controller="contactGroup" action="edit" class="btn btn-primary"><i class="fa fa-angle-double-down fa-lg"></i></g:link>
+                                <g:link controller="contactGroup" action="show" class="btn btn-secondary" id="${group.id}"><i class="fa fa-eye fa-lg"></i></g:link>
+                                <g:link controller="contactGroup" action="edit" class="btn btn-secondary" id="${group.id}"><i class="fa fa-pencil fa-lg"></i></g:link>
+                                <g:link controller="contactGroup" action="delete" id="${group.id}" class="btn btn-secondary delete-confirmation"><i class="fa fa-remove fa-lg"></i></g:link>
                             </div>
                         </td>
                     </tr>
