@@ -9,7 +9,7 @@
 </div>
 
 <div class="number-panel">
-    <g:include controller="contactNumber" action="number"/>
+    <g:include controller="contactNumber" action="number" id="${contact?.id}"/>
 </div>
 
 

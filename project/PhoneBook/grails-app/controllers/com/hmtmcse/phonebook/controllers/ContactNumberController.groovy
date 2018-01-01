@@ -1,8 +1,12 @@
 package com.hmtmcse.phonebook.controllers
 
+import com.hmtmcse.phonebook.PhoneBookService
+
 class ContactNumberController {
 
-    def number() {
+    PhoneBookService phoneBookService
 
+    def number() {
+        [numbers: phoneBookService.getContactNumbersByContactId(params.id)]
     }
 }
