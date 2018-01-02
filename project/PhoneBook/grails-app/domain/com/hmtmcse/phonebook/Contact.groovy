@@ -16,7 +16,6 @@ class Contact {
 
     static constraints = {
         image(nullable: true, blank: true)
-        image(nullable: true, blank: true)
     }
 
     static mapping = {
