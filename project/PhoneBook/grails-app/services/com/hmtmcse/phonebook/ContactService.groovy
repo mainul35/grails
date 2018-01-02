@@ -29,6 +29,9 @@ class ContactService {
         if (contact.validate()) {
             response.isSuccess = true
             contact.save(flush: true)
+            if (params.number) {
+                phoneBookService.updateContactNumber(contact, params.type, params.number, params.numberId)
+            }
         }
         return response
     }

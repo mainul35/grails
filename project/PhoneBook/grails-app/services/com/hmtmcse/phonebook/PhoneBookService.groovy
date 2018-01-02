@@ -5,10 +5,11 @@ class PhoneBookService {
 
     ContactService contactService
 
+
     def saveContactNumber(Contact contact, def type, def number) {
         if (type instanceof String && number instanceof String && !number.equals("")) {
             new ContactNumber(number: number, contact: contact, type: type).save(flush: true)
-        }else{
+        } else {
             Integer index = 0;
             number.each {
                 if (it) {
@@ -19,24 +20,60 @@ class PhoneBookService {
         }
     }
 
-    def updateContactNumber() {
+    private Integer getContactNumber(def numberId, Integer index){
+        try{
+           return Integer.parseInt(numberId.getAt(index))
+        }catch (Exception e){
+            return null
+        }
+    }
 
+    def updateContactNumber(Contact contact, def type, def number, def numberId) {
+        if (type instanceof String && number instanceof String) {
+            updateContactNumber(numberId, type, number)
+        } else {
+            Integer index = 0
+            String contactType
+            String contactNumber
+            def contactNumberId
+            number.each {
+                contactNumber = it
+                contactType = type.getAt(index)
+                contactNumberId = getContactNumber(numberId, index)
+                if (contactNumberId) {
+                    updateContactNumber(contactNumberId, contactType, contactNumber)
+                } else {
+                    if (contactNumber){
+                        contact.addToContactNumber([type: type[index], number: it]).save(flush: true)
+                    }
+                }
+                index++
+            }
+        }
+    }
+
+    def updateContactNumber(def id, String type, String number) {
+        ContactNumber contactNumber = ContactNumber.get(id)
+        if (contactNumber) {
+            contactNumber.type = type
+            contactNumber.number = number
+            contactNumber.save(flush: true)
+        }
     }
 
     def deleteContactNumber(Serializable id) {
         ContactNumber contactNumber = ContactNumber.get(id)
-        if (contactNumber){
+        if (contactNumber) {
             contactNumber.delete(flush: true)
             return AppUtil.infoMessage("Deleted")
         }
-        return AppUtil.infoMessage( "Unable to Delete", false)
+        return AppUtil.infoMessage("Unable to Delete", false)
     }
 
 
-
-    def getContactNumbersByContactId(Serializable id){
+    def getContactNumbersByContactId(Serializable id) {
         def contact = contactService.get(id)
-        if (contact){
+        if (contact) {
             return ContactNumber.createCriteria().list {
                 eq("contact", contact)
             }
