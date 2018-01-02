@@ -48,10 +48,20 @@ class ContactGroupService {
         return ContactGroup.list()
     }
 
+    def cleanGroupContactById(Integer id){
+        ContactGroup contactGroup = ContactGroup.get(id)
+        contactGroup.contact.each {contact ->
+            contact.removeFromContactGroup(contactGroup)
+        }
+        contactGroup.save(flush:true)
+    }
+
+
     def delete(ContactGroup contactGroup) {
         try {
+            cleanGroupContactById(contactGroup.id)
             contactGroup.delete(flush: true)
-        }catch (Exception e){
+        } catch (Exception e) {
             println(e.getMessage())
             return false
         }

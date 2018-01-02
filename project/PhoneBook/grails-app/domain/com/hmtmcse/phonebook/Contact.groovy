@@ -20,5 +20,6 @@ class Contact {
 
     static mapping = {
         version(false)
+        contactNumber(cascade: 'all-delete-orphan')
     }
 }
