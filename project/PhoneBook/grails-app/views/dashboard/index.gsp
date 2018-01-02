@@ -10,7 +10,7 @@
                 datasets: [{
                     backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(153, 102, 255, 0.2)"],
                     label: "Report",
-                    data: [65,59,80],
+                    data: [${report.contact}, ${report.group}, ${report.number}],
                     options: {"scales": {"yAxes": [{"ticks": {"beginAtZero": true}}]}}
                 }]
             }

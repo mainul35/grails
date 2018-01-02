@@ -19,32 +19,4 @@ class GlobalConfigService {
         return UUID.randomUUID().toString().toUpperCase();
     }
 
-
-    def initializer(){
-        Member member
-        def params = [:]
-        if (Member.count() == 0) {
-            params.firstName = "Demo"
-            params.lastName = "Account"
-            params.email = "demo@hmtmcse.com"
-            params.password = "demo"
-            member = new Member(params)
-            member.save()
-
-            if (ContactGroup.count() == 0) {
-                [
-                        ["name": "Family"],
-                        ["name": "Friend"],
-                        ["name": "Office"],
-                        ["name": "Other"],
-                ].each { contactGroup ->
-                    params = [:]
-                    params.name = contactGroup.name
-                    params.member = member
-                    new ContactGroup(params).save(flush: true)
-                }
-            }
-        }
-    }
-
 }

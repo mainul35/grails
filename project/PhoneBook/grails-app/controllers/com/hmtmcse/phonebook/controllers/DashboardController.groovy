@@ -1,9 +1,13 @@
 package com.hmtmcse.phonebook.controllers
 
+import com.hmtmcse.phonebook.PhoneBookService
+
 class DashboardController {
 
-    def index() {
+    PhoneBookService phoneBookService
 
+    def index() {
+        [report: phoneBookService.getReport()]
     }
 
     def create() {

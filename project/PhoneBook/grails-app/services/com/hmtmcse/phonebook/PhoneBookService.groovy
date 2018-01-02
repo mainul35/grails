@@ -4,6 +4,7 @@ package com.hmtmcse.phonebook
 class PhoneBookService {
 
     ContactService contactService
+    MemberService memberService
 
 
     def saveContactNumber(Contact contact, def type, def number) {
@@ -20,10 +21,10 @@ class PhoneBookService {
         }
     }
 
-    private Integer getContactNumber(def numberId, Integer index){
-        try{
-           return Integer.parseInt(numberId.getAt(index))
-        }catch (Exception e){
+    private Integer getContactNumber(def numberId, Integer index) {
+        try {
+            return Integer.parseInt(numberId.getAt(index))
+        } catch (Exception e) {
             return null
         }
     }
@@ -43,7 +44,7 @@ class PhoneBookService {
                 if (contactNumberId) {
                     updateContactNumber(contactNumberId, contactType, contactNumber)
                 } else {
-                    if (contactNumber){
+                    if (contactNumber) {
                         contact.addToContactNumber([type: type[index], number: it]).save(flush: true)
                     }
                 }
@@ -79,6 +80,16 @@ class PhoneBookService {
             }
         }
         return []
+    }
+
+    def getReport() {
+        def group = ContactGroup.createCriteria().list {
+            eq("member", memberService.getCurrentMember())
+        }
+        def contact = Contact.createCriteria().list {
+            eq("member", memberService.getCurrentMember())
+        }
+        return [group: group.size(), contact: contact.size(), number: contact?.contactNumber?.size() ?: 0]
     }
 
 }
