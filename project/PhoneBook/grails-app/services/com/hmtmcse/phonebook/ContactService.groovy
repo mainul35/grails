@@ -49,6 +49,7 @@ class ContactService {
             if (!params.sort) {
                 order("id", "desc")
             }
+            eq("member", memberService.getCurrentMember())
         }
         return [list: contactList, count: Contact.count()]
     }

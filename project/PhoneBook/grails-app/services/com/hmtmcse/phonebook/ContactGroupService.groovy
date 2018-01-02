@@ -6,9 +6,11 @@ import grails.web.servlet.mvc.GrailsParameterMap
 class ContactGroupService {
 
     GlobalConfigService globalConfigService
+    MemberService memberService
 
-    def save(GrailsParameterMap params) {
+    def save(def params) {
         ContactGroup contactGroup = new ContactGroup(params)
+        contactGroup.member = memberService.getCurrentMember()
         def response = AppUtil.saveResponse(false, contactGroup)
         if (contactGroup.validate()) {
             response.isSuccess = true
@@ -40,12 +42,15 @@ class ContactGroupService {
             if (!params.sort){
                 order("id","desc")
             }
+            eq("member", memberService.getCurrentMember())
         }
         return [list:contactGroupList, count:ContactGroup.count()]
     }
 
     def getGroupList(){
-        return ContactGroup.list()
+        return ContactGroup.createCriteria().list {
+            eq("member", memberService.getCurrentMember())
+        }
     }
 
     def cleanGroupContactById(Integer id){

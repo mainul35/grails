@@ -1,5 +1,8 @@
 <div class="form-group">
     <div class="form-inline phone-number-area">
+        <g:if test="${number}">
+            <g:hiddenField name="numberId" value="${number.id}"/>
+        </g:if>
         <div class="form-group">
             <UIHelper:contactType value="${number?.type}"/>
         </div>

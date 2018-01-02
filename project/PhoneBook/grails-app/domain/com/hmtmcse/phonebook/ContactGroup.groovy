@@ -4,6 +4,7 @@ class ContactGroup {
 
     Integer id
     String name
+    Member member
 
     Date dateCreated
     Date lastUpdated
@@ -13,6 +14,7 @@ class ContactGroup {
 
     static constraints = {
         name(blank: false, nullable: false)
+        member(nullable: true)
     }
 
     static mapping = {
