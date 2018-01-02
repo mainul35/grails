@@ -54,6 +54,7 @@ dependencies {
     runtime "com.bertramlabs.plugins:asset-pipeline-grails:2.14.2"
 
     runtime 'mysql:mysql-connector-java:5.1.36'
+    runtime 'org.xerial:sqlite-jdbc:3.21.0.1'
 
     testCompile "org.grails:grails-gorm-testing-support"
     testCompile "org.grails.plugins:geb"
