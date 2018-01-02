@@ -28,8 +28,41 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.card-body').on('click', '.remove-number', function () {
-        var _this = jQuery(this);
-        _this.closest(".form-group").remove();
+        var _this = jQuery(this),
+        contactId = _this.attr("data-id");
+
+        jQuery.confirm({
+            title: 'Delete Confirmation!',
+            content: 'Are you sure want to delete?',
+            buttons: {
+                confirm: {
+                    text: 'Yes',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        if(contactId !== undefined){
+                            GT.ajax.call({
+                                url: GT.baseURL + "contactNumber/delete/" + contactId,
+                                success: function (content) {
+                                    console.log(content);
+                                    if(content.success === true){
+                                        GT.messageBox.showMessage(true, content.info);
+                                        _this.closest(".form-group").remove();
+                                    }else{
+                                        GT.messageBox.showMessage(false, content.info)
+                                    }
+                                }
+                            });
+                        }else{
+                            _this.closest(".form-group").remove();
+                        }
+                    }
+                },
+                cancel: {
+                    text: 'No'
+                }
+            }
+        });
+
     });
 
 

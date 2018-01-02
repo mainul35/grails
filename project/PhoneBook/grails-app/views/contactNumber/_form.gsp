@@ -7,7 +7,7 @@
             <g:textField name="number.number" class="form-control" placeholder="Phone Number" value="${number?.number}"/>
         </div>
         <g:if test="${number}">
-            <button type="button" class="btn btn-danger remove-number"><i class="fa  fa-remove fa-lg"></i></button>
+            <button type="button" data-id="${number?.id}" class="btn btn-danger remove-number"><i class="fa  fa-remove fa-lg"></i></button>
         </g:if>
         <g:else>
             <button type="button" class="btn btn-primary add-new-number"><i class="fa  fa-plus-circle fa-lg"></i></button>

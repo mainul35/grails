@@ -23,8 +23,13 @@ class PhoneBookService {
 
     }
 
-    def deleteContactNumber() {
-
+    def deleteContactNumber(Serializable id) {
+        ContactNumber contactNumber = ContactNumber.get(id)
+        if (contactNumber){
+            contactNumber.delete(flush: true)
+            return AppUtil.infoMessage("Deleted")
+        }
+        return AppUtil.infoMessage( "Unable to Delete", false)
     }
 
 
