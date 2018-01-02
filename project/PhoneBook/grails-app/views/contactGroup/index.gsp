@@ -2,7 +2,7 @@
 
 <div class="card">
     <div class="card-header">
-        <g:message code="contact.group" args="['']"/>
+        <g:message code="contact.group" args="['List Of']"/>
         <span class="float-right">
             <div class="btn-group">
                 <g:link controller="contactGroup" action="create" class="btn btn-success"><g:message code="create"/></g:link>

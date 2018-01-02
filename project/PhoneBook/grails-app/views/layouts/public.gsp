@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:stylesheet src="application.css"/>
     <asset:stylesheet src="login.css"/>
+    <asset:javascript src="application.js"/>
     <script type="text/javascript">
         GT.baseURL = "${session.getServletContext().getContextPath()}/";
         <g:if test="${flash?.message && flash?.message?.info}">
@@ -35,7 +36,5 @@
         <g:layoutBody/>
     </main>
 </div>
-
-<asset:javascript src="application.js"/>
 </body>
 </html>

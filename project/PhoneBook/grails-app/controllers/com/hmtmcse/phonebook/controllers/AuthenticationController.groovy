@@ -1,5 +1,6 @@
 package com.hmtmcse.phonebook.controllers
 
+import com.hmtmcse.phonebook.AppUtil
 import com.hmtmcse.phonebook.MemberService
 
 class AuthenticationController {
@@ -17,8 +18,23 @@ class AuthenticationController {
         }
     }
 
-    def changePassword() {
+
+    def doChangePassword() {
         if (memberService.isAuthenticated()) {
+            def response = memberService.changePassword(params.password, params.newPassword, params.renewPassword)
+            flash.message = response
+            if (response.success){
+                redirect(controller: "dashboard", action: "index")
+            }else{
+                redirect(controller: "authentication", action: "changePassword")
+            }
+        } else {
+            redirect(controller: "authentication", action: "login")
+        }
+    }
+
+    def changePassword() {
+        if (!memberService.isAuthenticated()) {
             redirect(controller: "dashboard", action: "index")
         }
     }
