@@ -10,6 +10,7 @@
             data: {
                 labels: ["Contact", "Contact Group", "Number"],
                 datasets: [{
+                    label:"Report",
                     data: [10, 8, 6]
                 }]
             }
