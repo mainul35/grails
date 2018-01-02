@@ -9,6 +9,7 @@
 //= require bootstrap
 //= require popper.min
 //= require jquery-confirm.min
+//= require chart.bundle
 //= require gt
 //= require gt.message.box
 //= require gt.ajax

@@ -1,28 +1,33 @@
 <meta name="layout" content="main"/>
 
+%{--<script>new Chart(document.getElementById("report"), {--}%
+    %{--"type": "bar",--}%
+    %{--"data": {--}%
+        %{--"labels": ["January", "February", "March", "April", "May", "June", "July"],--}%
+        %{--"datasets": [{--}%
+            %{--"label": "My First Dataset",--}%
+            %{--"data": [65, 59, 80, 81, 56, 55, 40],--}%
+            %{--"fill": false,--}%
+            %{--"backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],--}%
+            %{--"borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],--}%
+            %{--"borderWidth": 1--}%
+        %{--}]--}%
+    %{--},--}%
+    %{--"options": {"scales": {"yAxes": [{"ticks": {"beginAtZero": true}}]}}--}%
+%{--});</script>--}%
+
 <div class="card">
     <div class="card-header">
-        Update Content
         <span class="float-right">
             <div class="btn-group">
-                <a href="#" class="btn btn-success">Create</a>
+                <a href="#" class="btn btn-success">New Contact</a>
+                <a href="#" class="btn btn-primary">New Contact Group</a>
                 <a href="#" class="btn btn-primary">Reload</a>
             </div>
         </span>
     </div>
+
     <div class="card-body">
-        <table class="table table-dark">
-            <thead>
-            <tr>
-                <th scope="col">Commit</th>
-                <th scope="col">Commit Hash</th>
-                <th scope="col">Files</th>
-                <th scope="col">Date</th>
-                <th scope="col">Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <div id="report"></div>
     </div>
 </div>
