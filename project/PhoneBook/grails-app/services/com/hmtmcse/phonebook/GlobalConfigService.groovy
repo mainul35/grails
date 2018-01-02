@@ -1,7 +1,5 @@
 package com.hmtmcse.phonebook
 
-import grails.web.servlet.mvc.GrailsParameterMap
-
 
 class GlobalConfigService {
 

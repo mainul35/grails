@@ -4,6 +4,19 @@
     <div class="card-header">
         <g:message code="contact" args="['List Of']"/>
         <span class="float-right">
+
+        <div class="btn-group">
+            <g:form controller="contact" action="index" method="GET">
+                <div class="input-group" id="search-area">
+                    <g:select name="colName" class="form-control" from="[name:'Name']" value="${params?.colName}" optionKey="key" optionValue="value"/>
+                    <g:textField name="colValue" class="form-control" value="${params?.colValue}"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Search</button>
+                    </span>
+                </div>
+            </g:form>
+        </div>
+
             <div class="btn-group">
                 <g:link controller="contact" action="create" class="btn btn-success"><g:message code="create"/></g:link>
                 <g:link controller="contact" action="index" class="btn btn-primary"><g:message code="reload"/></g:link>
