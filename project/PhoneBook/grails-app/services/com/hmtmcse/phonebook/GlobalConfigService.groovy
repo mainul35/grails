@@ -17,4 +17,6 @@ class GlobalConfigService {
         return UUID.randomUUID().toString().toUpperCase();
     }
 
+
+
 }
