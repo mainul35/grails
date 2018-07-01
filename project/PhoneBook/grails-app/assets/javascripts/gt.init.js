@@ -10,20 +10,22 @@ jQuery(document).ready(function () {
         content: 'Are you sure want to delete?'
     });
 
+    function abc (content) {
+        jQuery('.number-panel').append(content);
+        _this.removeClass("add-new-number");
+        _this.removeClass("btn-primary");
+        _this.addClass("remove-number");
+        _this.addClass("btn-danger");
+        _this.find(".fa").removeClass("fa-plus-circle");
+        _this.find(".fa").addClass("fa-remove");
+    }
+
     jQuery('.card-body').on('click', '.add-new-number ', function () {
         var _this = jQuery(this);
         GT.ajax.call({
             url: GT.baseURL + "contactNumber/number",
             dataType: "html",
-            success: function (content) {
-                jQuery('.number-panel').append(content);
-                _this.removeClass("add-new-number");
-                _this.removeClass("btn-primary");
-                _this.addClass("remove-number");
-                _this.addClass("btn-danger");
-                _this.find(".fa").removeClass("fa-plus-circle");
-                _this.find(".fa").addClass("fa-remove");
-            }
+            success: abc
         });
     });
 
