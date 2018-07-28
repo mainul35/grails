@@ -48,6 +48,7 @@ class ContactGroupService {
     }
 
     def getGroupList(){
+        ContactGroup.where {}
         return ContactGroup.createCriteria().list {
             eq("member", memberService.getCurrentMember())
         }

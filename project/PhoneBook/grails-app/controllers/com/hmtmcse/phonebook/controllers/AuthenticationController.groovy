@@ -1,6 +1,5 @@
 package com.hmtmcse.phonebook.controllers
 
-import com.hmtmcse.phonebook.AppUtil
 import com.hmtmcse.phonebook.MemberService
 
 class AuthenticationController {
