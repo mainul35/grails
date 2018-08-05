@@ -23,11 +23,12 @@ apply plugin:"org.grails.grails-gsp"
 repositories {
     mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
+    maven { url "http://central.maven.org/maven2/" }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
 
-    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.23.1'
 
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
@@ -52,6 +53,9 @@ dependencies {
     console "org.grails:grails-console"
     profile "org.grails.profiles:web"
     runtime "org.glassfish.web:el-impl:2.1.2-b03"
+
+    runtime "org.xerial:sqlite-jdbc:3.23.1"
+
     runtime "com.h2database:h2"
     runtime "org.apache.tomcat:tomcat-jdbc"
     runtime "com.bertramlabs.plugins:asset-pipeline-grails:2.14.8"
