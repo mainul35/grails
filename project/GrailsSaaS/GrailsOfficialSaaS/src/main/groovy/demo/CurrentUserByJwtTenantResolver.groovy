@@ -24,18 +24,8 @@ class CurrentUserByJwtTenantResolver implements TenantResolver {
 
         RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes()
         if(requestAttributes instanceof ServletWebRequest) {
-
             HttpServletRequest httpServletRequest = ((ServletWebRequest) requestAttributes).getRequest()
-            String token = httpServletRequest.getHeader(headerName.toLowerCase())
-            if ( !token ) {
-                throw new TenantNotFoundException("Tenant could not be resolved from HTTP Header: ${headerName}")
-            }
-
-            if (token.startsWith(headerValuePreffix)) {
-                token = token.substring(headerValuePreffix.length())
-            }
-
-            return "xyz"
+            return httpServletRequest.getParameter("tenant")
         }
         throw new TenantNotFoundException("Tenant could not be resolved outside a web request")
     }
