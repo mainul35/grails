@@ -1,12 +1,14 @@
 package com.hmtmcse.gsaas
 
 class Member {
+
     Integer id
     String firstName
     String lastName
     String email
     String password
     String identityHash
+    String memberUUID
 
     Date dateCreated
     Date lastUpdated
