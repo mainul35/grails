@@ -1,11 +1,8 @@
 package demo
 
-import grails.plugin.springsecurity.rest.token.storage.TokenStorageService
 import groovy.transform.CompileStatic
 import org.grails.datastore.mapping.multitenancy.TenantResolver
 import org.grails.datastore.mapping.multitenancy.exceptions.TenantNotFoundException
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.web.context.request.RequestAttributes
 import org.springframework.web.context.request.RequestContextHolder
 import org.springframework.web.context.request.ServletWebRequest
@@ -21,8 +18,6 @@ class CurrentUserByJwtTenantResolver implements TenantResolver {
     String headerName = HEADER_NAME
     String headerValuePreffix = HEADER_VALUE_PREFFIX
 
-    @Autowired
-    TokenStorageService tokenStorageService
 
     @Override
     Serializable resolveTenantIdentifier() throws TenantNotFoundException {
@@ -39,12 +34,8 @@ class CurrentUserByJwtTenantResolver implements TenantResolver {
             if (token.startsWith(headerValuePreffix)) {
                 token = token.substring(headerValuePreffix.length())
             }
-            UserDetails userDetails = tokenStorageService.loadUserByToken(token)
-            String username = userDetails?.username
-            if ( username ) {
-                return username
-            }
-            throw new TenantNotFoundException("Tenant could not be resolved from HTTP Header: ${headerName}")
+
+            return "xyz"
         }
         throw new TenantNotFoundException("Tenant could not be resolved outside a web request")
     }

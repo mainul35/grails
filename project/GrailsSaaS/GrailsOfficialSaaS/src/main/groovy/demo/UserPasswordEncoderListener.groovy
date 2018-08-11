@@ -1,20 +1,14 @@
 package demo
 
-import grails.plugin.springsecurity.SpringSecurityService
 import org.grails.datastore.mapping.engine.event.AbstractPersistenceEvent
-import org.grails.datastore.mapping.engine.event.EventType
 import org.grails.datastore.mapping.engine.event.PreInsertEvent
 import org.grails.datastore.mapping.engine.event.PreUpdateEvent
-import org.hibernate.event.spi.PreDeleteEvent
-import org.springframework.beans.factory.annotation.Autowired
 import grails.events.annotation.gorm.Listener
 import groovy.transform.CompileStatic
 
 @CompileStatic
 class UserPasswordEncoderListener {
 
-    @Autowired
-    SpringSecurityService springSecurityService
 
     @Listener(User)
     void onPreInsertEvent(PreInsertEvent event) {
@@ -36,6 +30,6 @@ class UserPasswordEncoderListener {
     }
 
     private String encodePassword(String password) {
-        springSecurityService?.passwordEncoder ? springSecurityService.encodePassword(password) : password
+        return password
     }
 }
