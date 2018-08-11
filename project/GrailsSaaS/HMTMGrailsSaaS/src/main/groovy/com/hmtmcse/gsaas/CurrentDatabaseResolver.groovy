@@ -8,7 +8,7 @@ class CurrentDatabaseResolver implements TenantResolver {
 
     @Override
     Serializable resolveTenantIdentifier() throws TenantNotFoundException {
-        return null
+        return "hmtm_grails_saas"
     }
 
 }

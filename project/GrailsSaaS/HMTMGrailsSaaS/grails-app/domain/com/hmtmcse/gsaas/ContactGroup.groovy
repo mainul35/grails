@@ -1,6 +1,8 @@
 package com.hmtmcse.gsaas
 
-class ContactGroup {
+import grails.gorm.MultiTenant
+
+class ContactGroup implements MultiTenant<ContactGroup> {
 
     Integer id
     String name
@@ -19,6 +21,5 @@ class ContactGroup {
 
     static mapping = {
         version(false)
-        cache (true)
     }
 }

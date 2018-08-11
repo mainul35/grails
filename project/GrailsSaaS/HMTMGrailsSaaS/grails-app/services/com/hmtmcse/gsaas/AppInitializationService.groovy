@@ -1,6 +1,9 @@
 package com.hmtmcse.gsaas
 
+import grails.gorm.multitenancy.CurrentTenant
 
+
+@CurrentTenant
 class AppInitializationService {
 
     static initialize() {

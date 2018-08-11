@@ -1,6 +1,8 @@
 package com.hmtmcse.gsaas
 
-class Contact {
+import grails.gorm.MultiTenant
+
+class Contact implements MultiTenant<Contact> {
 
     Integer id
     String name

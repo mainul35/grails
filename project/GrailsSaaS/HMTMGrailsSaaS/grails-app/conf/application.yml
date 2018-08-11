@@ -7,9 +7,10 @@ grails:
         transactionManagement:
             proxies: false
     gorm:
+        multiTenancy:
+            mode: DATABASE
+            tenantResolverClass: com.hmtmcse.gsaas.CurrentDatabaseResolver
         reactor:
-            # Whether to translate GORM events into Reactor events
-            # Disabled by default for performance reasons
             events: false
 info:
     app:

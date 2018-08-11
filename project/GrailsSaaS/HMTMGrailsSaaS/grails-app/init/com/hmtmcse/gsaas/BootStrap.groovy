@@ -1,12 +1,17 @@
 package com.hmtmcse.gsaas
 
+import com.hmtmcse.gsaas.provision.DatabaseProvisioningService
 
 
 class BootStrap {
 
+    DatabaseProvisioningService databaseProvisioningService
 
     def init = { servletContext ->
-        AppInitializationService.initialize()
+//        databaseProvisioningService.placeHolderDb("hmtm_grails_saas")
+
+
+//        AppInitializationService.initialize()
     }
 
     def destroy = {
