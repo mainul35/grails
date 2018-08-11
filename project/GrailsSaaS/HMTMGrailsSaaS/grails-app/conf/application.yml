@@ -94,12 +94,13 @@ hibernate:
         provider_class: net.sf.ehcache.hibernate.EhCacheProvider
         region:
           factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+
 dataSource:
     pooled: true
     logSql: true
     jmxExport: true
-    driverClassName: org.h2.Driver
-    username: sa
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
     password: ''
 
 environments:
@@ -108,7 +109,7 @@ environments:
             port: "1992"
         dataSource:
             dbCreate: update
-            url: jdbc:h2:mem:phone_book;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            url: jdbc:mysql://localhost/hmtm_grails_saas
     test:
         dataSource:
             dbCreate: update

@@ -19,5 +19,6 @@ class ContactGroup {
 
     static mapping = {
         version(false)
+        cache (true)
     }
 }
