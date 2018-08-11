@@ -1,9 +1,0 @@
-<configuration>
-    <nic>
-        <ip>10.0.40.30</ip>
-    </nic>
-    <authentication>
-        <username>touhid</username>
-        <password>adfkadjflkajdlkjadlf</password>
-    </authentication>
-</configuration>
