@@ -2,6 +2,7 @@ package demo
 
 import groovy.transform.CompileStatic
 import groovy.util.logging.Slf4j
+import static grails.gorm.multitenancy.Tenants.*
 
 @Slf4j
 @CompileStatic
@@ -9,10 +10,10 @@ class PlanController {
     static allowedMethods = [index: 'GET', save: 'POST', delete: 'DELETE']
 
     PlanService planService
+    AbulService abulService
 
     def index() {
-        List<Plan> planList = planService.findAll()
-        [planList: planList]
+        [planList: abulService.list()]
     }
 
     def save(SavePlanCommand cmd) {

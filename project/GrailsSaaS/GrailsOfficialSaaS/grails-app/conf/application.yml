@@ -73,9 +73,11 @@ grails:
 #tag::defaultDatasource[]
 hibernate:
     cache:
-        queries: false
-        use_second_level_cache: false
-        use_query_cache: false
+        queries: true
+        use_second_level_cache: true
+        use_query_cache: true
+        region:
+            factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
 dataSource:
     pooled: true
     jmxExport: true
@@ -84,5 +86,6 @@ dataSource:
     username: root # <1>
     password:  ""
     dbCreate: update
+    logSql: true
     url: jdbc:mysql://localhost/minions # <1>
 #end::defaultDatasource[]

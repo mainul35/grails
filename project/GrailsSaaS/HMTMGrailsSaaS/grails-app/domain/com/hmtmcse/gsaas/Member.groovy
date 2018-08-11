@@ -18,6 +18,7 @@ class Member {
         password(blank: false)
         firstName(blank: false)
         lastName(nullable: true, blank: true)
+        memberUUID(nullable: true)
         identityHash(nullable: true, blank: true)
     }
 
@@ -29,6 +30,7 @@ class Member {
 
 
     def beforeInsert (){
+        this.memberUUID = AppUtil.getSystemUUID()
         this.password = this.password.encodeAsMD5()
     }
 

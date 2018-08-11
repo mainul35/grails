@@ -17,4 +17,7 @@ class AppUtil {
         return [info: message, success: status]
     }
 
+    public static String getSystemUUID(){
+        return UUID.randomUUID().toString().toUpperCase()
+    }
 }

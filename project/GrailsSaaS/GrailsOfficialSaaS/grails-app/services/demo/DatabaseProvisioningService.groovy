@@ -20,6 +20,7 @@ class DatabaseProvisioningService {
         [
                 'hibernate.hbm2ddl.auto':'none',
                 'username': 'root',
+                'logSql': true,
                 'password': '',
                 'url':"jdbc:mysql://localhost/$username"
         ] as Map<String, Object>
